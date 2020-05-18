@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	vector<int> tempretures;
+	int sum = 0;
+	for(const auto& t: tempretures)
+	{
+		cin >> t;
+		tempretures.push_back(t);
+		sum+= t;
+	}
+	cout << sum << endl;
+	return 0;
+}

@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	float a;
+	float b;
+	float c;
+	float x1;
+	float x2;
+	cin >> a >> b >> c;
+	cout << a << " " << b << " " << c << endl;
+	x1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
+	x2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
+	cout << x1 << " " << x2 << endl;
+	return 0;
+}

@@ -1,0 +1,8 @@
+#include "responses.h"
+
+struct BusesForStopResponse{
+	vector<string> buses;
+}
+
+
+

@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	string input;
+	cin >> input;
+	for(auto c: input)
+	{
+		cout << c << endl;
+	}
+}

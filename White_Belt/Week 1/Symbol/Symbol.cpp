@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	string input;
+	int count = 0, index = 0;
+	cin >> input;
+	for(int i = 0; i < input.size(); i++)
+	{
+		if(input[i] == 'f')
+		{
+			++count;
+			index = i;
+		}
+		if(count == 2)
+		{
+			break;
+		}
+	}
+	if(count == 0)
+	{
+		cout << -2 << endl;
+	}
+	else if(count == 1)
+	{
+		cout << -1 << endl;
+	}
+	else
+	{
+		cout << index << endl;
+	}
+}

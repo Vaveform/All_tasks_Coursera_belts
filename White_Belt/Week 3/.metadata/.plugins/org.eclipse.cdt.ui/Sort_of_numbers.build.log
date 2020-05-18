@@ -1,0 +1,6 @@
+00:45:28 **** Incremental Build of configuration Debug for project Sort_of_numbers ****
+Info: Internal Builder is used for build
+g++ -o Sort_of_numbers.exe "src\\Sort_of_numbers.o" 
+
+00:45:28 Build Finished. 0 errors, 0 warnings. (took 233ms)
+

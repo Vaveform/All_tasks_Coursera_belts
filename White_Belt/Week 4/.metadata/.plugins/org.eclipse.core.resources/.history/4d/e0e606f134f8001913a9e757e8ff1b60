@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : Make_precision.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	ifstream input("input.txt");
+	string line;
+	while(getline(input, line))
+	{
+		cout << setprecision(3) << line;
+	}
+	return 0;
+}

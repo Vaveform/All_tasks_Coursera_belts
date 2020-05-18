@@ -1,0 +1,7 @@
+22:25:29 **** Incremental Build of configuration Debug for project Enumeration_permutation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Enumeration_permutation.o" "..\\src\\Enumeration_permutation.cpp" 
+g++ -o Enumeration_permutation.exe "src\\Enumeration_permutation.o" 
+
+22:25:29 Build Finished. 0 errors, 0 warnings. (took 762ms)
+

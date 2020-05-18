@@ -1,0 +1,15 @@
+#include "stats.h"
+
+Stats::Stats(){
+	for(size_t i = 0; i < Stats::methods.size(); ++i){
+		Stats::methods_stat[Stats::methods[i]] = 0;
+		Stats::urls_stat[Stats::urls[i]] = 0;
+	}
+	Stats::urls_stat[Stats::urls[Stats::urls.size() - 1]] = 0;
+}
+
+void Stats::AddMethod(string_view method)
+
+
+
+

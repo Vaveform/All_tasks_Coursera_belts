@@ -1,0 +1,108 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <deque>
+
+using namespace std;
+
+struct arithmetic_operation
+{
+	int Priority;
+	string operation;
+
+	friend istream& operator>>(istream& inp, arithmetic_operation& i);
+	friend void operator=(arithmetic_operation& left,const arithmetic_operation right);
+};
+
+istream& operator>>(istream& inp, arithmetic_operation& i)
+{
+	inp >> i.operation;
+	if(i.operation == "-" || i.operation == "+")
+	{
+		i.Priority = 2;
+	}
+	else if(i.operation == "*" || i.operation == "/"){
+		i.Priority = 1;
+	}
+	return inp;
+}
+
+void operator=(arithmetic_operation& left,const arithmetic_operation right){
+	left.Priority = right.Priority;
+	left.operation = right.operation;
+}
+
+
+
+void first_expression_type()
+{
+	int initial;
+	cin >> initial;
+	deque<string> expression;
+	int num_of_operation;
+	cin >> num_of_operation;
+	bool is_empty = (num_of_operation == 0);
+	is_empty ? expression.push_back(to_string(initial)) :
+			expression.push_back(("(" + to_string(initial) + ")"));
+	while(num_of_operation != 0)
+	{
+		string operation;
+		cin >> operation;
+		int number;
+		cin >> number;
+		expression.push_back((" " + operation + " "));
+		expression.push_back(to_string(number));
+		if(num_of_operation != 1){
+			expression.push_back(")");
+			expression.push_front("(");
+		}
+		num_of_operation--;
+	}
+	for(auto const& elem: expression){
+		cout << elem;
+	}
+	cout << endl;
+}
+
+void second_expression_type()
+{
+	int initial;
+	cin >> initial;
+	deque<string> expression;
+	expression.push_back(to_string(initial));
+	int num_of_operation;
+	cin >> num_of_operation;
+	arithmetic_operation tmp_operation;
+	while(num_of_operation != 0)
+	{
+		arithmetic_operation operation;
+		cin >> operation;
+		int number;
+		cin >> number;
+		expression.push_back((" " + operation.operation + " "));
+		expression.push_back(to_string(number));
+		if(num_of_operation != 1){
+			expression.push_back(")");
+			expression.push_front("(");
+		}
+		num_of_operation--;
+	}
+	for(auto const& elem: expression){
+		cout << elem;
+	}
+	cout << endl;
+}
+
+
+
+int main() {
+//	first_expression_type();
+//	second_expression_type();
+	arithmetic_operation left;
+	arithmetic_operation right;
+	cin >> right;
+	left = right;
+	cout << left.operation << endl;
+	return 0;
+}

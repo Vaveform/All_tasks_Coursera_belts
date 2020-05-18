@@ -1,0 +1,7 @@
+21:35:17 **** Incremental Build of configuration Debug for project Inheritance ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inheritance.o" "..\\src\\Inheritance.cpp" 
+g++ -o Inheritance.exe "src\\Inheritance.o" 
+
+21:35:17 Build Finished. 0 errors, 0 warnings. (took 587ms)
+

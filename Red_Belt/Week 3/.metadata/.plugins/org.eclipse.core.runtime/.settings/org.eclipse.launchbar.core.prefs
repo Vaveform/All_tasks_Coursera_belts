@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Object_pull.exe,org.eclipse.launchbar.core.descriptorType.default\:Swap_Sort_Copy.exe,org.eclipse.launchbar.core.descriptorType.default\:SimpleVector.exe,org.eclipse.launchbar.core.descriptorType.default\:LinkedList.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Object_pull.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Object_pull.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

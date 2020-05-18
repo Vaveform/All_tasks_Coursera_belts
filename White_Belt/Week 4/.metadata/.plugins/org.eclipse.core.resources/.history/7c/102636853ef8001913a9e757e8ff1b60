@@ -1,0 +1,38 @@
+//============================================================================
+// Name        : Work_with_table.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	int N, M;
+	string elem;
+	ifstream input("input.txt");
+	if(input)
+	{
+		input >> N;
+		input >> M;
+		while(N > 0)
+		{
+			while(M > 0)
+			{
+				getline(input, elem, ',');
+				cout << setw(10) << elem << " ";
+				M--;
+			}
+			cout << "\n";
+			N--;
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,7 @@
+23:20:08 **** Rebuild of configuration Debug for project Work_with_files_1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Work_with_files.o" "..\\src\\Work_with_files.cpp" 
+g++ -o Work_with_files_1.exe "src\\Work_with_files.o" 
+
+23:20:09 Build Finished. 0 errors, 0 warnings. (took 628ms)
+

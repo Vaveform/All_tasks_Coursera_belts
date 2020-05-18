@@ -1,0 +1,10 @@
+01:11:43 **** Incremental Build of configuration Debug for project Macros_Update_field ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\update_field.o" "..\\src\\update_field.cpp" 
+..\src\update_field.cpp:12:1: warning: multi-line comment [-Wcomment]
+ //#define UPDATE_FIELD(ticket, field, values)                        \
+ ^
+g++ -o Macros_Update_field.exe "src\\airline_ticket.o" "src\\update_field.o" 
+
+01:11:44 Build Finished. 0 errors, 1 warnings. (took 1s.81ms)
+

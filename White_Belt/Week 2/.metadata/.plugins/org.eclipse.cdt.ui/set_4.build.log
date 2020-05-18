@@ -1,0 +1,7 @@
+01:52:10 **** Incremental Build of configuration Debug for project set_4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\set_4.o" "..\\src\\set_4.cpp" 
+g++ -o set_4.exe "src\\set_4.o" 
+
+01:52:11 Build Finished. 0 errors, 0 warnings. (took 900ms)
+

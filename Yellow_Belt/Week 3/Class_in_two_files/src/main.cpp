@@ -1,0 +1,16 @@
+#include <iostream>
+#include "phone_number.h"
+#include "test_runner.h"
+#include "tests.h"
+using namespace std;
+
+
+
+int main() {
+	TestRunner runner;
+	runner.RunTest(Test_to_good_numbers, "Test_to_good_numbers");
+	//PhoneNumber p("1-2-333"); // -должно выпасть исключение
+	//PhoneNumber l("+7-1233"); // -должно выпасть исключение
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

@@ -1,0 +1,6 @@
+01:54:41 **** Incremental Build of configuration Debug for project Figure_set ****
+Info: Internal Builder is used for build
+g++ -o Figure_set.exe "src\\Figure_set.o" 
+
+01:54:41 Build Finished. 0 errors, 0 warnings. (took 288ms)
+

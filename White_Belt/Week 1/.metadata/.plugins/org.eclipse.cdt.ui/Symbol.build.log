@@ -1,0 +1,11 @@
+21:43:43 **** Incremental Build of configuration Debug for project Symbol ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Symbol.o "..\\Symbol.cpp" 
+..\Symbol.cpp: In function 'int main()':
+..\Symbol.cpp:12:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  for(int i = 0; i < input.size(); i++)
+                 ~~^~~~~~~~~~~~~~
+g++ -o Symbol.exe Symbol.o 
+
+21:43:44 Build Finished. 0 errors, 1 warnings. (took 529ms)
+

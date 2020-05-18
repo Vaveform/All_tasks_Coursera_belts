@@ -1,0 +1,8 @@
+
+#include <vector>
+#include <string>
+#include <iostream>
+
+enum class QueryType;
+struct Query;
+istream& operator >> (istream& is, Query& q);

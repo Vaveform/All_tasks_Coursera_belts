@@ -1,0 +1,77 @@
+#pragma once
+
+#include <cstdlib>
+
+// � еализуйте шаблон SimpleVector
+template <typename T>
+class SimpleVector {
+public:
+  SimpleVector(){
+	  data = nullptr;
+	  end_ = data;
+	  in_size = 0;
+	  capacity = 0;
+  }
+  explicit SimpleVector(size_t size){
+	  data = new T[size];
+	  end_ = data + size;
+	  in_size = size;
+	  capacity = size;
+  }
+  ~SimpleVector(){
+	  delete[] data;
+  }
+
+  T& operator[](size_t index){
+	  return data[index];
+  }
+
+  T* begin(){
+	  return data;
+  }
+  T* end(){
+	  return end_;
+  }
+
+  size_t Size() const{
+	  return in_size;
+  }
+  size_t Capacity() const{
+	  return capacity;
+  }
+  void PushBack(const T& value){
+	  if(Size() == Capacity()){
+		  if(Size() == 0){
+			  T* new_data = new T[1];
+			  new_data[in_size] = value;
+			  in_size++;
+			  end_ = &new_data[in_size];
+			  capacity = 1;
+			  data = new_data;
+		  }
+		  else{
+			  T* new_data = new T[2 * capacity];
+			  for(size_t i = 0; i < in_size; ++i){
+				  new_data[i] = data[i];
+			  }
+			  new_data[in_size] = value;
+			  in_size++;
+			  end_ = &new_data[in_size];
+			  capacity *= 2;
+			  delete[] data;
+			  data = new_data;
+		  }
+	  }
+	  else{
+		  data[in_size] = value;
+		  in_size++;
+		  end_ = &data[in_size];
+	  }
+  }
+
+private:
+  T* data;
+  T* end_;
+  size_t in_size;
+  size_t capacity;
+};

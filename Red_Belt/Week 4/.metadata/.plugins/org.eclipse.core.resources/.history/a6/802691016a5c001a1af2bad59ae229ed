@@ -1,0 +1,57 @@
+#include "test_runner.h"
+#include <string>
+#include <vector>
+#include <string_view>
+#include <deque>
+
+using namespace std;
+
+class Translator {
+public:
+  void Add(string_view source, string_view target){
+	  forward[source] = target;
+	  backward[target] = source;
+  }
+  string_view TranslateForward(string_view source) const{
+	  auto translated = forward.find(source);
+	  if(translated == forward.end()){
+		  return string_view("");
+	  }
+	  else{
+		  return translated->second;
+	  }
+  }
+  string_view TranslateBackward(string_view target) const{
+	  auto translated = backward.find(target);
+	  if(translated == backward.end()){
+		  return string_view("");
+	  }
+	  else{
+		  return translated->second;
+	  }
+  }
+
+private:
+  map<string_view, string_view> forward;
+  map<string_view, string_view> backward;
+};
+
+void TestSimple() {
+  Translator translator;
+  translator.Add(string("okno"), string("window"));
+  translator.Add(string("stol"), string("table"));
+  translator.Add(string("stol"), string("truba"));
+  translator.Add(string("stol"), string("knopka"));
+  translator.Add(string("kopa"), string("opa"));
+  translator.Add(string("lopa"), string("opa"));
+  translator.Add(string("jola"), string("opa"));
+
+  ASSERT_EQUAL(translator.TranslateForward("stol"), "knopka");
+  ASSERT_EQUAL(translator.TranslateBackward("knopka"), "stol");
+}
+
+int main() {
+  TestRunner tr;
+  RUN_TEST(tr, TestSimple);
+  return 0;
+}

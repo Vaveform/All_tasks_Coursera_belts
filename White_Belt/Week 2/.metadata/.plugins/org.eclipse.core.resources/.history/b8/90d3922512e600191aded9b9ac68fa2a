@@ -1,0 +1,32 @@
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <vector>
+using namespace std;
+
+void add(set<vector<string>>& to_be_added, string word1, string word2)
+{
+	vector<string> to_add = {word1, word2};
+	to_be_added.insert(to_add);
+}
+void check(const set<vector<string>>& to_be_checked, string word1, string word2)
+{
+	vector<string> to_check = {word1, word2};
+	bool flag = false;
+	for(const auto& elem: to_be_checked)
+	{
+		if(elem == to_check)
+		{
+			flag = true;
+			break;
+		}
+	}
+	flag ? cout << "YES" << endl : cout << "NO" << endl;
+}
+
+int main()
+{
+
+	return 0;
+}

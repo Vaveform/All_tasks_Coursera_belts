@@ -1,0 +1,21 @@
+
+#include <iostream>
+#include <set>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	set<map> result;
+	string elem;
+	int n;
+	cin >> n;
+	while(n > 0)
+	{
+		cin >> elem;
+		result.insert(elem);
+	}
+	cout << result.size();
+	return 0;
+}

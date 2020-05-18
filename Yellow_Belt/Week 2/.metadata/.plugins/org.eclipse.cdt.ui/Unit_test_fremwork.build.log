@@ -1,0 +1,7 @@
+16:23:19 **** Rebuild of configuration Debug for project Unit_test_fremwork ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Unit_test_fremwork.o" "..\\src\\Unit_test_fremwork.cpp" 
+g++ -o Unit_test_fremwork.exe "src\\Unit_test_fremwork.o" 
+
+16:23:19 Build Finished. 0 errors, 0 warnings. (took 678ms)
+

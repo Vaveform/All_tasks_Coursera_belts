@@ -1,0 +1,7 @@
+02:03:47 **** Incremental Build of configuration Debug for project LinkedList ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.cpp" 
+g++ -o LinkedList.exe "src\\LinkedList.o" 
+
+02:03:48 Build Finished. 0 errors, 0 warnings. (took 911ms)
+

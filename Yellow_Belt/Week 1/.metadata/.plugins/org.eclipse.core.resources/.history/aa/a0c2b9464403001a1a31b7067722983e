@@ -1,0 +1,19 @@
+#include <iostream>
+#include <map>
+#include <exception>
+using namespace std;
+
+template <typename Key, typename Value>
+Value& GetRefStrict(const map<Key, Value>& dict, Key key)
+{
+	try{
+		Value& ref = dict.at(key);
+	}catch(out_of_range& ex){
+		throw runtime_error("Not found");
+	}
+	return ref;
+}
+
+int main() {
+	return 0;
+}

@@ -1,0 +1,68 @@
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <map>
+
+int calendary[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int current_position = 0;
+
+using namespace std;
+
+void add(vector<vector<string>>& dates, int date, string task)
+{
+	dates[date - 1].push_back(task);
+}
+
+void next(vector<vector<string>>& dates, int& current_position, int calendary[])
+{
+	current_position == 11 ? current_position = 0 : ++current_position;
+	int interval = dates.size()- calendary[current_position];
+	if(interval > 0)
+	{
+		for(int i = calendary[current_position]; i < dates.size(); ++i)
+		{
+			for(auto d: dates[i]){
+				dates[calendary[current_position] - 1].push_back(d);
+			}
+		}
+	}
+	dates.resize(calendary[current_position]);
+}
+
+void dump(const vector<vector<string>>& dates, int day)
+{
+	cout << dates[day-1].size() << " ";
+	for(auto task: dates[day-1])
+	{
+		cout << task << " ";
+	}
+	cout << endl;
+}
+
+int main()
+{
+	vector<vector<string>> months(current_position);
+	string activity;
+	cin >> activity;
+	if(activity == "ADD")
+	{
+		int day;
+		string task;
+		cin >> day >> task;
+		add(months, day, task);
+	}
+	else if(activity == "NEXT")
+	{
+		next(months, current_position, calendary);
+	}
+	else
+	{
+		int day;
+		cin >> day;
+		dump(months, day);
+	}
+	return 0;
+}

@@ -1,0 +1,103 @@
+#include "test_runner.h"
+
+#include <iostream>
+#include <vector>
+#include <exception>
+#include <stdexcept>
+
+using namespace std;
+
+template <typename Type> class Deque{
+public:
+	vector<Type> back;
+	vector<Type> front;
+	Deque(){
+		back.resize(0);
+		front.resize(0);
+	}
+	bool Empty() const{
+		return back.empty() && front.empty() ? true : false;
+	}
+	size_t Size() const{
+		return back.size() + front.size();
+	}
+	Type& operator[](size_t index){
+		if(index < front.size()){
+			return front[index];
+		}
+		else{
+			return back[index - front.size()];
+		}
+	}
+	const Type& operator[](size_t index) const {
+		return operator[](index);
+	}
+	Type& At(size_t index){
+		if(index > Size() - 1){
+			throw(out_of_range("Out of range"));
+		}
+		else{
+			return operator[](index);
+		}
+	}
+	const Type& At(size_t index) const{
+		return At(index);
+	}
+	Type& Front(){
+		if(front.empty()){
+			return back.front();
+		}
+		else{
+			return front.back();
+		}
+	}
+	Type& Back(){
+		if(back.empty()){
+			return front.front();
+		}
+		else{
+			return back.back();
+		}
+	}
+	const Type& Front() const {
+		return Front();
+	}
+	const Type& Back() const{
+		return Back();
+	}
+	void PushFront(Type elem){
+		front.push_back(elem);
+	}
+	void PushBack(Type elem){
+		back.push_back(elem);
+	}
+};
+
+void TestDeq(){
+	Deque<int> deq;
+	deq.PushFront(12);
+	deq.PushFront(11);
+	deq.PushFront(10);
+	deq.PushBack(9);
+	deq.PushBack(16);
+	ASSERT_EQUAL(deq.Size(), 5u);
+	ASSERT_EQUAL(deq.Empty(), false);
+	ASSERT_EQUAL(deq.Back(), 16);
+	ASSERT_EQUAL(deq.Front(), 10);
+
+}
+
+
+int main() {
+	TestRunner tr;
+	RUN_TEST(tr, TestDeq);
+	Deque<int> deq;
+	deq.PushFront(12);
+	deq.PushFront(11);
+	deq.PushFront(10);
+	deq.PushBack(9);
+	deq.PushBack(16);
+	cout << deq[0] << " " << deq[1] << " " << deq[2] << " " << deq[3] << " " << deq[4] <<endl;
+	cout << deq.At(4);
+	return 0;
+}

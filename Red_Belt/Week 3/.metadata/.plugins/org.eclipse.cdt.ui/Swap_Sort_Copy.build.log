@@ -1,0 +1,7 @@
+19:24:38 **** Incremental Build of configuration Debug for project Swap_Sort_Copy ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Swap_Sort_Copy.o" "..\\src\\Swap_Sort_Copy.cpp" 
+g++ -o Swap_Sort_Copy.exe "src\\Swap_Sort_Copy.o" 
+
+19:24:39 Build Finished. 0 errors, 0 warnings. (took 904ms)
+

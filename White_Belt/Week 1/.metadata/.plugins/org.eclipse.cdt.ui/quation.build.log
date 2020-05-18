@@ -1,0 +1,7 @@
+19:50:19 **** Incremental Build of configuration Debug for project quation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o equation.o "..\\equation.cpp" 
+g++ -o quation.exe equation.o 
+
+19:50:19 Build Finished. 0 errors, 0 warnings. (took 586ms)
+
