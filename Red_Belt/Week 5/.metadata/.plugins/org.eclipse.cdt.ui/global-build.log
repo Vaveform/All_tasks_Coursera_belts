@@ -1,27 +1,11 @@
-23:22:12 **** Incremental Build of configuration Debug for project Research_blogs ****
+02:06:25 **** Incremental Build of configuration Debug for project Group_strings ****
 Info: Internal Builder is used for build
-g++ -std=c++1z -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Research_blogs.o" "..\\src\\Research_blogs.cpp" 
-..\src\Research_blogs.cpp: In function 'Stats ExploreKeyWords(const std::set<std::__cxx11::basic_string<char> >&, std::istream&)':
-..\src\Research_blogs.cpp:141:81: error: no matching function for call to 'async(Stats (&)(const std::set<std::__cxx11::basic_string<char> >&, std::istream), std::reference_wrapper<const std::set<std::__cxx11::basic_string<char> > >, std::stringstream&)'
-  141 |          futures.push_back(async(ExploreKeyWordsSingleThread, ref(key_words), ss));
-      |                                                                                 ^
-In file included from ..\src\Research_blogs.cpp:7:
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future:1707:5: note: candidate: 'template<class _Fn, class ... _Args> std::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(std::launch, _Fn&&, _Args&& ...)'
- 1707 |     async(launch __policy, _Fn&& __fn, _Args&&... __args)
-      |     ^~~~~
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future:1707:5: note:   template argument deduction/substitution failed:
-..\src\Research_blogs.cpp:141:34: note:   cannot convert 'ExploreKeyWordsSingleThread' (type 'Stats(const std::set<std::__cxx11::basic_string<char> >&, std::istream)' {aka 'Stats(const std::set<std::__cxx11::basic_string<char> >&, std::basic_istream<char>)'}) to type 'std::launch'
-  141 |          futures.push_back(async(ExploreKeyWordsSingleThread, ref(key_words), ss));
-      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Research_blogs.cpp:7:
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future:1740:5: note: candidate: 'template<class _Fn, class ... _Args> std::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(_Fn&&, _Args&& ...)'
- 1740 |     async(_Fn&& __fn, _Args&&... __args)
-      |     ^~~~~
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future:1740:5: note:   template argument deduction/substitution failed:
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future: In substitution of 'template<class _Fn, class ... _Args> std::future<typename std::__invoke_result<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...>::type> std::async(_Fn&&, _Args&& ...) [with _Fn = Stats (&)(const std::set<std::__cxx11::basic_string<char> >&, std::basic_istream<char>); _Args = {std::reference_wrapper<const std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >&}]':
-..\src\Research_blogs.cpp:141:81:   required from here
-C:/dev/TDM-GCC/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++/future:1740:5: error: no type named 'type' in 'struct std::__invoke_result<Stats (*)(const std::set<std::__cxx11::basic_string<char> >&, std::basic_istream<char>), std::reference_wrapper<const std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> > >'
-23:24:00 **** Incremental Build of configuration Debug for project Research_blogs ****
-Info: Internal Builder is used for build
-g++ -std=c++1z -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Research_blogs.o" "..\\src\\Research_blogs.cpp" 
-g++ -o Research_blogs.exe "src\\Research_blogs.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Group_strings.o" "..\\src\\Group_strings.cpp" 
+In file included from ..\src\Group_strings.cpp:1:
+..\src\test_runner.h: In instantiation of 'void AssertEqual(const T&, const U&, const string&) [with T = long long unsigned int; U = int; std::string = std::__cxx11::basic_string<char>]':
+..\src\Group_strings.cpp:56:3:   required from here
+..\src\test_runner.h:57:11: warning: comparison of integer expressions of different signedness: 'const long long unsigned int' and 'const int' [-Wsign-compare]
+   57 |   if (!(t == u)) {
+      |        ~~~^~~~~
+g++ -o Group_strings.exe "src\\Group_strings.o" 
+Info: Nothing to build for Group_strings

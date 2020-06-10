@@ -1,7 +1,1 @@
-13:47:03 **** Incremental Build of configuration Debug for project Multithread_sum ****
-Info: Internal Builder is used for build
-g++ -std=c++1z -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Multithread_sum.o" "..\\src\\Multithread_sum.cpp" 
-g++ -o Multithread_sum.exe "src\\Multithread_sum.o" 
-
-13:47:06 Build Finished. 0 errors, 0 warnings. (took 2s.228ms)
-
+Info: Nothing to build for Multithread_sum
