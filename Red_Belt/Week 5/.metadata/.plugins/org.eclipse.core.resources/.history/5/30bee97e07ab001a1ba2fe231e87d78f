@@ -31,7 +31,7 @@ vector<Group<String>> GroupHeavyStrings(vector<String> strings) {
 		alphabets[current_alphabet].push_back(move(strings[i]));
 	}
 	for(auto iter = alphabets.begin(); iter != alphabets.end(); iter++){
-		result.push_back(move((*iter).second));
+		auto elem = (*iter);
 	}
 	return result;
 }
