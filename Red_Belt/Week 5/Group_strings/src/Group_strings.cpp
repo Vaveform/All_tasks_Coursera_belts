@@ -22,13 +22,8 @@ vector<Group<String>> GroupHeavyStrings(vector<String> strings) {
 	map<Alphabet<Char<String>>, Group<String>> alphabets;
 	vector<Group<String>> result;
 	for(size_t i = 0; i < strings.size(); i++){
-		set<Char<String>> current_alphabet;
-		auto alphabet_inserter = strings[i].begin();
-		while(alphabet_inserter != strings[i].end()){
-			current_alphabet.insert(move(*alphabet_inserter));
-			alphabet_inserter++;
-		}
-		alphabets[current_alphabet].push_back(move(strings[i]));
+		set<Char<String>> current_alphabet(strings[i].begin(), strings[i].end());
+		alphabets[move(current_alphabet)].push_back(move(strings[i]));
 	}
 	for(auto iter = alphabets.begin(); iter != alphabets.end(); iter++){
 		result.push_back(move((*iter).second));

@@ -6,17 +6,9 @@
 template <typename T>
 class SimpleVector {
 public:
-  SimpleVector(){
-	  data = nullptr;
-	  end_ = data;
-	  in_size = 0;
-	  capacity = 0;
+  SimpleVector() : data(nullptr), in_size(0), capacity(0){
   }
-  explicit SimpleVector(size_t size){
-	  data = new T[size];
-	  end_ = data + size;
-	  in_size = size;
-	  capacity = size;
+  explicit SimpleVector(size_t size) : data(new T[size]), in_size(size), capacity(size){
   }
   ~SimpleVector(){
 	  delete[] data;
@@ -26,19 +18,26 @@ public:
 	  return data[index];
   }
 
-  T* begin(){
+  const T* begin() const{
 	  return data;
   }
+
   T* end(){
-	  return end_;
+	  return data + in_size;
+  }
+
+  const T* end() const{
+	  return data + in_size;
   }
 
   size_t Size() const{
 	  return in_size;
   }
+
   size_t Capacity() const{
 	  return capacity;
   }
+
   void PushBack(const T& value){
 	  if(Size() == Capacity()){
 		  size_t cap = Size() == 0 ? 1 : 2 * Capacity();
@@ -48,7 +47,6 @@ public:
 		  }
 		  new_data[in_size] = value;
 		  in_size++;
-		  end_ = &new_data[in_size];
 		  capacity = cap;
 		  delete[] data;
 		  data = new_data;
@@ -56,13 +54,11 @@ public:
 	  else{
 		  data[in_size] = value;
 		  in_size++;
-		  end_ = &data[in_size];
 	  }
   }
 
 private:
   T* data;
-  T* end_;
   size_t in_size;
   size_t capacity;
 };

@@ -752,3 +752,9 @@ java.lang.RuntimeException
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-10 14:02:04.810
+!MESSAGE Indexed 'Copy_and_assigns_constructors' (1 sources, 140 headers) in 4,88 sec: 15 626 declarations; 23 738 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0,015 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-06-10 18:29:12.292
+!MESSAGE Indexed 'Partition_on_sentences' (1 sources, 140 headers) in 3,21 sec: 15 626 declarations; 23 738 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0,015 %)
