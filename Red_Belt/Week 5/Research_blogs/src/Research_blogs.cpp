@@ -10,7 +10,7 @@
 
 using namespace std;
 
-// Р РµР°Р»РёР·СѓР№С‚Рµ С€Р°Р±Р»РѕРЅ РєР»Р°СЃСЃР° Paginator
+
 template <typename It>
 class IteratorRange{
 private:
@@ -68,24 +68,6 @@ auto Paginate(C& c, size_t page_size) {
   return Paginator{c.begin(), c.end(), page_size};
 }
 
-//Посчитать количество пересечений чистой строки с входной строкой
-int CountSubStrBetweenShifts(string_view line, const string& finded_string, int pos){
-	auto current_pos = line.find(finded_string, pos);
-	if(current_pos == line.npos)
-	{
-		return 0;
-	}
-	size_t before = current_pos == 0 ? 0 : current_pos - 1;
-	size_t after = current_pos + finded_string.size();
- 	if((before == 0 && after == line.size()) ||
- 			(before == 0 && line[after] == ' ') ||
- 			(line[before] == ' ' && after == line.size()) ||
-			(line[before] == ' ' && line[after] == ' ')){
-		return 1 + CountSubStrBetweenShifts(line, finded_string, after);
-	}
-	return 0 + CountSubStrBetweenShifts(line, finded_string, after);
-}
-
 struct Stats {
   map<string, int> word_frequences;
 
@@ -97,16 +79,33 @@ struct Stats {
 };
 
 
-Stats ExploreLine(const set<string>& key_words, const string& line) {
-	Stats stat;
-	for(const auto& key_word : key_words)
-	{
-		int counted = CountSubStrBetweenShifts(line, key_word, 0);
-		if(counted != 0){
-			stat.word_frequences[key_word] += counted;
+Stats ExploreLine(const set<string>& key_words, string_view line) {
+	Stats result;
+	string temporary;
+	size_t prev_pos = 0;
+	size_t next_pos = 0;
+	while(next_pos != line.npos){
+		next_pos = line.find(" ", prev_pos);
+		if(next_pos != line.npos){
+			temporary = line.substr(prev_pos, next_pos - prev_pos);
+			prev_pos = next_pos + 1;
+		}
+		else{
+			temporary = line.substr(prev_pos, line.length());
+		}
+		if(key_words.count(temporary) != 0){
+			result.word_frequences[temporary]++;
 		}
 	}
-	return stat;
+	return result;
+}
+
+Stats ExploreListOfLines(const set<string>& key_words, IteratorRange<vector<string>::iterator> Range){
+	Stats result;
+	for(auto it = Range.begin(); it != Range.end(); it++){
+		result += ExploreLine(key_words, *it);
+	}
+	return result;
 }
 
 Stats ExploreKeyWordsSingleThread(
@@ -119,29 +118,19 @@ Stats ExploreKeyWordsSingleThread(
   return result;
 }
 
-//Stats ExploreKeyWordsSingleThread(
-//  const set<string>& key_words, const vector<string>& inp
-//) {
-//  Stats result;
-//  for (string line : inp ) {
-//    result += ExploreLine(key_words, line);
-//  }
-//  return result;
-//}
-
 Stats ExploreKeyWords(const set<string>& key_words, istream& input) {
     Stats result;
-    size_t strings_for_thread = 50000;
+    size_t num_threads = 4;
+
     vector<future<Stats>> futures;
-    size_t i = 1;
-    stringstream ss;
-    for (string line; getline(input, line); ) {
-        ss << line;
-        if(i == strings_for_thread){
-        	futures.push_back(async(ExploreKeyWordsSingleThread, ref(key_words), ref(ss)));
-        	i = 1;
-        }
-        i++;
+    vector<string> strings;
+    for(string line; getline(input, line);){
+		strings.push_back(move(line));
+	}
+    size_t size_page = strings.size() / num_threads == 0 ? strings.size() : strings.size() / num_threads;
+    auto Pages = Paginate(strings, size_page);
+    for(auto lines : Pages){
+    	futures.push_back(async(ExploreListOfLines, ref(key_words), lines));
     }
     for(auto& f : futures){
     	result += f.get();
@@ -158,7 +147,7 @@ void TestBasic() {
   ss << "10 reasons why yangle is the best IT company\n";
   ss << "yangle rocks others suck\n";
   ss << "Goondex really sucks, but yangle rocks. Use yangle\n";
-  const auto stats = ExploreKeyWords(key_words, ss);
+  const auto stats = ExploreKeyWordsSingleThread(key_words, ss);
   const map<string, int> expected = {
     {"yangle", 6},
     {"rocks", 2},
@@ -170,23 +159,5 @@ void TestBasic() {
 int main() {
   TestRunner tr;
   RUN_TEST(tr, TestBasic);
-//	string finded_string1 = "yangle";
-//	string finded_string2 = "rocks";
-//	string finded_string3 = "sucks";
-//	string finded_string4 = "all";
-//	string tmp_string = "Goondex really sucks, but yangle rocks ! Use yangle";
-//	cout << "yangle: " << CountSubStrBetweenShifts(tmp_string, finded_string1, 0) << endl;
-//	cout << "rocks: " << CountSubStrBetweenShifts(tmp_string, finded_string2, 0) << endl;
-//	cout << "sucks: " << CountSubStrBetweenShifts(tmp_string, finded_string3, 0) << endl;
-//	cout << "all: " << CountSubStrBetweenShifts(tmp_string, finded_string4, 0) << endl;
-//	stringstream ss;
-//	  for(size_t i = 0; i < 1000000; i++){
-//		  ss << "this new yangle service really rocks\n";
-//		  ss << "It sucks when yangle isn't available\n";
-//		  ss << "10 reasons why yangle is the best IT company\n";
-//		  ss << "yangle rocks others suck\n";
-//		  ss << "Goondex really sucks, but yangle rocks. Use yangle\n";
-//	  }
-//	  ExploreKeyWords({"s", "f", "c"}, ss);
 	return 0;
 }
