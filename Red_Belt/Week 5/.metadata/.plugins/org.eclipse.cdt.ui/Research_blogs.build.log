@@ -1,7 +1,0 @@
-21:41:35 **** Incremental Build of configuration Debug for project Research_blogs ****
-Info: Internal Builder is used for build
-g++ -std=c++1z -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Research_blogs.o" "..\\src\\Research_blogs.cpp" 
-g++ -o Research_blogs.exe "src\\Research_blogs.o" 
-
-21:41:39 Build Finished. 0 errors, 0 warnings. (took 4s.701ms)
-
