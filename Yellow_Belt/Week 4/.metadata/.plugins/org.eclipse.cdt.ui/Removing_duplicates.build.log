@@ -1,7 +1,0 @@
-21:19:11 **** Incremental Build of configuration Debug for project Removing_duplicates ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Removing_duplicates.o" "..\\src\\Removing_duplicates.cpp" 
-g++ -o Removing_duplicates.exe "src\\Removing_duplicates.o" 
-
-21:19:12 Build Finished. 0 errors, 0 warnings. (took 969ms)
-

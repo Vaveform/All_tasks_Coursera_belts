@@ -1,8 +1,0 @@
-#include "Header_function.h"
-#include <iostream>
-using namespace std;
-
-int main() {
-	cout << sum(5,2) << endl;
-	return 0;
-}

@@ -1,7 +1,0 @@
-19:42:56 **** Incremental Build of configuration Debug for project Bad_macros ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bad_macros.o" "..\\src\\Bad_macros.cpp" 
-g++ -o Bad_macros.exe "src\\Bad_macros.o" 
-
-19:42:57 Build Finished. 0 errors, 0 warnings. (took 684ms)
-

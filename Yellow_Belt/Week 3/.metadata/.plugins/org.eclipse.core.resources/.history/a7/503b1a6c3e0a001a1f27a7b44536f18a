@@ -1,9 +1,0 @@
-#pragma once
-#include <vector>
-#include <string>
-#include <iostream>
-
-enum class QueryType;
-struct Query;
-vector<int> v;
-istream& operator >> (istream& is, Query& q);

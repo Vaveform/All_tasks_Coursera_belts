@@ -1,7 +1,0 @@
-00:51:07 **** Incremental Build of configuration Debug for project Expresses ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Expresses.o" "..\\src\\Expresses.cpp" 
-g++ -o Expresses.exe "src\\Expresses.o" 
-
-00:51:08 Build Finished. 0 errors, 0 warnings. (took 942ms)
-

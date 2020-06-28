@@ -1,7 +1,0 @@
-20:45:54 **** Incremental Build of configuration Debug for project Test_dictionary ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Test_dictionary.o" "..\\src\\Test_dictionary.cpp" 
-g++ -o Test_dictionary.exe "src\\Test_dictionary.o" 
-
-20:45:55 Build Finished. 0 errors, 0 warnings. (took 848ms)
-

@@ -1,7 +1,0 @@
-01:01:05 **** Incremental Build of configuration Debug for project Yellow_belt_course_work ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\database.o" "..\\src\\database.cpp" 
-g++ -o Yellow_belt_course_work.exe "src\\condition_parser.o" "src\\condition_parser_test.o" "src\\database.o" "src\\date.o" "src\\main.o" "src\\node.o" "src\\token.o" 
-
-01:01:07 Build Finished. 0 errors, 0 warnings. (took 2s.811ms)
-

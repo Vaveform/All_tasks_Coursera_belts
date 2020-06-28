@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Stackector/src/SimpleVector.cpp&apos; to &apos;stack_vector.cpp&apos;" description="Rename resource &apos;SimpleVector.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SimpleVector.cpp" name="stack_vector.cpp" stamp="1583055674912" updateReferences="true"/>
-</session>

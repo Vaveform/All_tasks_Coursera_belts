@@ -1,6 +1,0 @@
-11:01:39 **** Incremental Build of configuration Debug for project Merge_sort ****
-make all 
-make: Цель «all» не требует выполнения команд.
-
-11:01:40 Build Finished. 0 errors, 0 warnings. (took 62ms)
-

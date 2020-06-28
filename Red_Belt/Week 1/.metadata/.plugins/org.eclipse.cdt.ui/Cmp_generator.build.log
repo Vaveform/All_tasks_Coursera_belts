@@ -1,8 +1,0 @@
-00:00:05 **** Incremental Build of configuration Debug for project Cmp_generator ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sort_by.o" "..\\src\\sort_by.cpp" 
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\airline_ticket.o" "..\\src\\airline_ticket.cpp" 
-g++ -o Cmp_generator.exe "src\\airline_ticket.o" "src\\sort_by.o" 
-
-00:00:06 Build Finished. 0 errors, 0 warnings. (took 1s.589ms)
-

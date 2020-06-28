@@ -1,7 +1,0 @@
-17:09:20 **** Incremental Build of configuration Debug for project Object_pull ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Object_pull.o" "..\\src\\Object_pull.cpp" 
-g++ -o Object_pull.exe "src\\Object_pull.o" 
-
-17:09:22 Build Finished. 0 errors, 0 warnings. (took 1s.650ms)
-

@@ -1,7 +1,0 @@
-22:04:56 **** Incremental Build of configuration Debug for project Vector_printer ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Vector_printer.o" "..\\src\\Vector_printer.cpp" 
-g++ -o Vector_printer.exe "src\\Vector_printer.o" 
-
-22:04:57 Build Finished. 0 errors, 0 warnings. (took 784ms)
-

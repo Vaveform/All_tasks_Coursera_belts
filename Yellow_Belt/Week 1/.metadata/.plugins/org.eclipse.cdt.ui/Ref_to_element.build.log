@@ -1,7 +1,0 @@
-02:50:12 **** Incremental Build of configuration Debug for project Ref_to_element ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ref_to_element.o" "..\\src\\Ref_to_element.cpp" 
-g++ -o Ref_to_element.exe "src\\Ref_to_element.o" 
-
-02:50:13 Build Finished. 0 errors, 0 warnings. (took 780ms)
-

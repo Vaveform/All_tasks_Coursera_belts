@@ -1,7 +1,0 @@
-20:44:44 **** Incremental Build of configuration Debug for project Boughts ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Boughts.o "..\\Boughts.cpp" 
-g++ -o Boughts.exe Boughts.o 
-
-20:44:46 Build Finished. 0 errors, 0 warnings. (took 1s.955ms)
-

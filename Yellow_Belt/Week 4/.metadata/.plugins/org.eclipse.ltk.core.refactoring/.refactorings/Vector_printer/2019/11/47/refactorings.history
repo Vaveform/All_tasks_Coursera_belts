@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Vector_printer/src/test_runner.h&apos; to &apos;Unit_Test_Framework.h&apos;" description="Rename resource &apos;test_runner.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test_runner.h" name="Unit_Test_Framework.h" stamp="1574187091828" updateReferences="true"/>
-</session>

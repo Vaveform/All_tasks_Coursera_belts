@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;vector_week_2/src/vector_week_2.cpp&apos; to &apos;vector_1.cpp&apos;" description="Rename resource &apos;vector_week_2.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/vector_week_2.cpp" name="vector_1.cpp" stamp="1569755379186" updateReferences="true"/>
-</session>

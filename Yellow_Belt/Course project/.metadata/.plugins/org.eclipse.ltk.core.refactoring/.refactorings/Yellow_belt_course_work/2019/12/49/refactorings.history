@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Yellow_belt_course_work/src/Yellow_belt_course_work.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;Yellow_belt_course_work.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Yellow_belt_course_work.cpp" name="main.cpp" stamp="1575319596675" updateReferences="true"/>
-</session>

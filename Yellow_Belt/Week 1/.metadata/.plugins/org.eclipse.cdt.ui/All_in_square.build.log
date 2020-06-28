@@ -1,7 +1,0 @@
-01:24:06 **** Incremental Build of configuration Debug for project All_in_square ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\All_in_square.o" "..\\src\\All_in_square.cpp" 
-g++ -o All_in_square.exe "src\\All_in_square.o" 
-
-01:24:06 Build Finished. 0 errors, 0 warnings. (took 789ms)
-

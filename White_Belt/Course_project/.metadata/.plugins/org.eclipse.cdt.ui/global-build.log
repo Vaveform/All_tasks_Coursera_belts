@@ -1,6 +1,0 @@
-Info: Nothing to build for Data_base
-19:11:05 **** Incremental Build of configuration Debug for project Data_base ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Data_base.o" "..\\src\\Data_base.cpp" 
-g++ -o Data_base.exe "src\\Data_base.o" 
-Info: Nothing to build for Data_base

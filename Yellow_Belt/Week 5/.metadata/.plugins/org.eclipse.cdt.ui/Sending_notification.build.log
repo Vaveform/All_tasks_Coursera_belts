@@ -1,7 +1,0 @@
-01:18:34 **** Incremental Build of configuration Debug for project Sending_notification ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sending_notification.o" "..\\src\\Sending_notification.cpp" 
-g++ -o Sending_notification.exe "src\\Sending_notification.o" 
-
-01:18:35 Build Finished. 0 errors, 0 warnings. (took 590ms)
-

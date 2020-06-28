@@ -1,8 +1,0 @@
-00:33:38 **** Incremental Build of configuration Debug for project Factorial_test ****
-Info: Internal Builder is used for build
-g++ -o Factorial_test.exe Factorial_test.o 
-C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text.startup+0x2e): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-
-00:33:38 Build Finished. 0 errors, 0 warnings. (took 169ms)
-

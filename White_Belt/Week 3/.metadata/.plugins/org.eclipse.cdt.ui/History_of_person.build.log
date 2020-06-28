@@ -1,7 +1,0 @@
-00:00:37 **** Incremental Build of configuration Debug for project History_of_person ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\History_of_person.o" "..\\src\\History_of_person.cpp" 
-g++ -o History_of_person.exe "src\\History_of_person.o" 
-
-00:00:38 Build Finished. 0 errors, 0 warnings. (took 807ms)
-

@@ -1,9 +1,0 @@
-#include "Header_function.h"
-#include <iostream>
-using namespace std;
-
-int main() {
-	cout << Sum(5,2) << endl;
-	cout << Reverse("string") << endl;
-	return 0;
-}

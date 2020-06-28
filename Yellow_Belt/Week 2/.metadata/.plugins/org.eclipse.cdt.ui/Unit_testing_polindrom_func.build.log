@@ -1,7 +1,0 @@
-18:04:45 **** Incremental Build of configuration Debug for project Unit_testing_polindrom_func ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Unit_testing_polindrom_func.o" "..\\src\\Unit_testing_polindrom_func.cpp" 
-g++ -o Unit_testing_polindrom_func.exe "src\\Unit_testing_polindrom_func.o" 
-
-18:04:45 Build Finished. 0 errors, 0 warnings. (took 719ms)
-

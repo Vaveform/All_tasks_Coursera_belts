@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Stat_HTTP_Server/src/Stat_HTTP_Server.cpp&apos; to &apos;server_stats.cpp&apos;" description="Rename resource &apos;Stat_HTTP_Server.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Stat_HTTP_Server.cpp" name="server_stats.cpp" stamp="1583617030163" updateReferences="true"/>
-</session>

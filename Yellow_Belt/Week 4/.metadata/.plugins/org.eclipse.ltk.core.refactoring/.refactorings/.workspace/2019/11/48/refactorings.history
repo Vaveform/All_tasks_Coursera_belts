@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;FindNearestElement/src/Unit_test_fremwork.cpp&apos;" deleteContents="false" description="Delete resource &apos;FindNearestElement/src/Unit_test_fremwork.cpp&apos;" element1="/FindNearestElement/src/Unit_test_fremwork.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1574858214184"/>
-</session>

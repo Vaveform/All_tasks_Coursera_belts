@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Functions_week2/Factorial.cpp&apos; to &apos;Functions_week2.cpp&apos;" description="Rename resource &apos;Factorial.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Factorial.cpp" name="Functions_week2.cpp" stamp="1569700544899" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Functions_week2/isPolindrom&apos; to &apos;isPolindrom.cpp&apos;" description="Rename resource &apos;isPolindrom&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="isPolindrom" name="isPolindrom.cpp" stamp="1569705167263" updateReferences="true"/>
-</session>

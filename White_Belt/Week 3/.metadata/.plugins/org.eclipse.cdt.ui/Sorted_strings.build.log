@@ -1,7 +1,0 @@
-13:53:15 **** Incremental Build of configuration Debug for project Sorted_strings ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sorted_strings.o" "..\\src\\Sorted_strings.cpp" 
-g++ -o Sorted_strings.exe "src\\Sorted_strings.o" 
-
-13:53:15 Build Finished. 0 errors, 0 warnings. (took 590ms)
-

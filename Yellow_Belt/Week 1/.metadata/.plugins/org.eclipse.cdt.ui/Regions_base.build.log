@@ -1,7 +1,0 @@
-23:04:05 **** Incremental Build of configuration Debug for project Regions_base ****
-Info: Internal Builder is used for build
-g++ --std=c++1z -O0 -g3 -Wall -Werror -c -fmessage-length=0 -o "src\\Regions_base.o" "..\\src\\Regions_base.cpp" 
-g++ -o Regions_base.exe "src\\Regions_base.o" 
-
-23:04:07 Build Finished. 0 errors, 0 warnings. (took 2s.489ms)
-

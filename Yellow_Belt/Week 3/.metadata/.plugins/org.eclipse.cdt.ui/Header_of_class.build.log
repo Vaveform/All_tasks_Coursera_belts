@@ -1,8 +1,0 @@
-00:53:00 **** Incremental Build of configuration Debug for project Header_of_class ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Rectangle.o" "..\\src\\Rectangle.cpp" 
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Header_of_class.o" "..\\src\\Header_of_class.cpp" 
-g++ -o Header_of_class.exe "src\\Header_of_class.o" "src\\Rectangle.o" 
-
-00:53:01 Build Finished. 0 errors, 0 warnings. (took 823ms)
-
