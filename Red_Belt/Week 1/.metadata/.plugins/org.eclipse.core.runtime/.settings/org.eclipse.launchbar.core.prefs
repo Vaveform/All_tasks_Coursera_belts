@@ -1,0 +1,13 @@
+LaunchTargetManager/configs/Cmp_generator.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Paginators.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Macros_Log.exe,org.eclipse.launchbar.core.descriptorType.default\:Cmp_generator.exe,org.eclipse.launchbar.core.descriptorType.default\:Macros_Update_field.exe,org.eclipse.launchbar.core.descriptorType.default\:Bad_macros.exe,org.eclipse.launchbar.core.descriptorType.default\:UNIQ_ID.exe,org.eclipse.launchbar.core.descriptorType.default\:Class_table.exe,org.eclipse.launchbar.core.descriptorType.default\:Simple_deque.exe,org.eclipse.launchbar.core.descriptorType.default\:Peginator.exe,org.eclipse.launchbar.core.descriptorType.default\:Paginators.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Bad_macros.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Bad_macros.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Cmp_generator.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Cmp_generator.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Macros_Log.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Macros_Log.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,41 @@
+#include <iostream>
+#include <tuple>
+#include <cstdint>
+#include <map>
+#include <set>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+auto GetRank(const Region& region){
+	return tie(region.std_name, region.parent_std_name,
+			region.names, region.population);
+}
+
+bool operator==(const Region& lhs, const Region& rhs)
+{
+	return GetRank(lhs) == GetRank(rhs);
+}
+
+int FindMaxRepetitionCount(const vector<Region>& regions){
+	if(regions.size() == 0){
+		return 0;
+	}
+	else{
+		int count = 0,result;
+		set<int> repeats;
+		for(auto const& elem: regions)
+		{
+			count = count_if(begin(regions), end(regions), [elem](Regions i){
+				return elem == i;
+			});
+			repeats.insert(count);
+			count = 0;
+		}
+		result = *(repeats.rbegin());
+		return result;
+	}
+}
+

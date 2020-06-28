@@ -1,0 +1,7 @@
+20:20:49 **** Incremental Build of configuration Debug for project Partition_on_sentences ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Partition_on_sentences.o" "..\\src\\Partition_on_sentences.cpp" 
+g++ -o Partition_on_sentences.exe "src\\Partition_on_sentences.o" 
+
+20:20:51 Build Finished. 0 errors, 0 warnings. (took 1s.719ms)
+

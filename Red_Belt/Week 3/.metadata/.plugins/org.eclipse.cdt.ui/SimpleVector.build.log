@@ -1,0 +1,7 @@
+22:57:48 **** Incremental Build of configuration Debug for project SimpleVector ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SimpleVector.o" "..\\src\\SimpleVector.cpp" 
+g++ -o SimpleVector.exe "src\\SimpleVector.o" 
+
+22:57:49 Build Finished. 0 errors, 0 warnings. (took 945ms)
+

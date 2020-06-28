@@ -1,0 +1,76 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Human{
+public:
+	Human(const string& _Name) : Name(_Name) {}
+	virtual void Walk(const string& destination) const = 0;
+	const string Name;
+};
+
+class Student : public Human {
+public:
+    Student(const string& _Name, const string& favouriteSong) :
+    	Human(_Name), FavouriteSong(favouriteSong) {}
+    void Learn() const {
+        cout << "Student: " << Name << " learns" << endl;
+    }
+    void Walk(const string& destination) const override {
+        cout << "Student: " << Name << " walks to: " << destination << endl;
+        cout << "Student: " << Name << " sings a song: " << FavouriteSong << endl;
+    }
+    void SingSong() const {
+        cout << "Student: " << Name << " sings a song: " << FavouriteSong << endl;
+    }
+    const string FavouriteSong;
+    const string Profession = "Student";
+};
+
+class Teacher : public Human {
+public:
+    Teacher(const string& name, const string& subject) : Human(name), Subject(subject) {}
+    void Teach() const {
+        cout << "Teacher: " << Name << " teaches: " << Subject << endl;
+    }
+    void Walk(const string& destination) const override {
+        cout << "Teacher: " << Name << " walks to: " << destination << endl;
+    }
+    const string Subject;
+    const string Profession = "Teacher";
+};
+
+
+class Policeman : public Human {
+public:
+    Policeman(const string& name) : Human(name) {}
+    template <typename Obj>
+    void Check(Obj M){
+    	cout << "Policeman: " << Name << " checks " << M.Profession
+    			<< ". " << M.Profession << "'s name is: " << M.Name << endl;
+    }
+    void Walk(const string& destination) const override {
+        cout << "Policeman: " << Name << " walks to: " << destination << endl;
+    }
+    const string Profession = "Policeman";
+};
+
+template <typename Man>
+void VisitPlaces(const Man& t, const vector<string>& places) {
+    for (const auto& p : places) {
+        t.Walk(p);
+    }
+}
+
+int main() {
+    Teacher t("Jim", "Math");
+    Student s("Ann", "We will rock you");
+    Policeman p("Bob");
+
+    VisitPlaces(t, {"Moscow", "London"});
+    p.Check(s);
+    VisitPlaces(s, {"Moscow", "London"});
+    return 0;
+}

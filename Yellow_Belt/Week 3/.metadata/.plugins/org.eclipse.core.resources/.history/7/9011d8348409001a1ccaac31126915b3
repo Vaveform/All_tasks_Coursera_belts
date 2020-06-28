@@ -1,0 +1,10 @@
+
+#include <iostream>
+#include "rectangle.h"
+using namespace std;
+
+int main()
+{
+	Rectangle t(10,5);
+	return 0;
+}

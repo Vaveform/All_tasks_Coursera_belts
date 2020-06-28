@@ -1,0 +1,54 @@
+#include "stats.h"
+#include <iostream>
+
+Stats::Stats(){
+	for(int i = 0; i < Stats::methods.size(); ++i){
+		methods_stat[methods[i]] = 0;
+		urls_stat[urls[i]] = 0;
+	}
+	urls_stat[urls[urls.size() - 1]] = 0;
+}
+
+void Stats::AddMethod(string_view method){
+	if(Stats::methods_stat.find(method) == Stats::methods_stat.end()){
+		Stats::methods_stat[methods[methods.size() - 1]] += 1;
+	}
+	else{
+		Stats::methods_stat[method] += 1;
+	}
+}
+
+void Stats::AddUri(string_view uri){
+	if(Stats::urls_stat.find(uri) == Stats::urls_stat.end()){
+		Stats::urls_stat[urls[urls.size() - 1]] += 1;
+	}
+	else{
+		Stats::urls_stat[uri] += 1;
+	}
+}
+
+const map<string_view, int>& Stats::GetMethodStats() const {
+	return Stats::methods_stat;
+}
+
+const map<string_view, int>& Stats::GetUriStats() const {
+	return Stats::urls_stat;
+}
+
+HttpRequest ParseRequest(string_view line){
+	vector<string_view> result;
+	size_t pos = 0;
+	pos = line.find_first_not_of(' ', pos);
+	while(true){
+		size_t space = line.find(' ', pos);
+		result.push_back(line.substr(pos, space - pos));
+		if(space == line.npos){
+			break;
+		}
+		else{
+			pos = space + 1;
+		}
+	}
+	HttpRequest req = {result[0], result[1], result[2]};
+	return req;
+}

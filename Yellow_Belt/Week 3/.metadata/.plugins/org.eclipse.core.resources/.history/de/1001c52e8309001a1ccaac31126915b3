@@ -1,0 +1,10 @@
+#include "rectangle.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	Rectangle t(10,5);
+	cout << t.GetWidth << " " << t.GetHeight << endl;
+	cout << t.GetPerimeter() << " " << t.GetArea() << endl;
+	return 0;
+}

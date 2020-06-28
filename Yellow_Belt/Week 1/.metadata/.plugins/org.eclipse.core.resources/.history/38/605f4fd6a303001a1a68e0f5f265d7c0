@@ -1,0 +1,35 @@
+#include <iostream>
+#include <map>
+#include <utility>
+
+using namespace std;
+
+enum class TaskStatus {
+	NEW,
+	IN_PROGRESS,
+	TESTING,
+	DONE
+};
+
+using TasksInfo = map<TaskStatus, int>;
+
+class TeamTasks{
+private:
+	map<string, TasksInfo> Team;
+public:
+	 const TasksInfo& GetPersonTasksInfo(const string& person) const
+	 {
+		 return Team.at(person);
+	 }
+	 void AddNewTask(const string& person)
+	 {
+		 Team[person][TastsStatus::NEW]++;
+	 }
+	  tuple<TasksInfo, TasksInfo> PerformPersonTasks(
+	      const string& person, int task_count);
+};
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

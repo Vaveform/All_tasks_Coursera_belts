@@ -1,0 +1,74 @@
+#include <iostream>
+#include <vector>
+#include <exception>
+#include <stdexcept>
+
+using namespace std;
+
+template <typename Type> class Deque{
+public:
+	vector<Type> back;
+	vector<Type> front;
+	Deque(){
+		back.resize(0);
+		front.resize(0);
+	}
+	bool Empty() const{
+		return back.empty() && front.empty() ? true : false;
+	}
+	int Size() const{
+		return back.size() + front.size();
+	}
+//	Type& operator[](size_t index){
+//		if(index < front.size() - 1){
+//			return front[index];
+//		}
+//		else{
+//			return back[index];
+//		}
+//	}
+//	const Type& operator[](size_t index) const {
+//		return operator[](index);
+//	}
+//	Type& At(size_t index){
+//		if(index > back.size() - 1){
+//			throw(out_of_range("Out of range"));
+//		}
+//		else{
+//			return operator[](index);
+//		}
+//	}
+//	const Type& At(size_t index) const{
+//		return At(index);
+//	}
+	Type& Front(){
+		return front.back();
+	}
+	const Type& Front() const {
+		return front.back();
+	}
+	Type& Back(){
+		return back.back();
+	}
+	const Type& Back() const{
+		return back.back();
+	}
+	void PushFront(Type elem){
+		front.push_back(elem);
+	}
+	void PushBack(Type elem){
+		back.push_back(elem);
+	}
+};
+
+
+int main() {
+	Deque<int> deq;
+	deq.PushBack(12);
+	deq.PushBack(11);
+	deq.PushBack(10);
+	cout << deq.Size() << endl;
+	cout << "Deque empty? " << deq.Empty() << endl;
+	cout << "Back: " << deq.Back() << endl;
+	return 0;
+}

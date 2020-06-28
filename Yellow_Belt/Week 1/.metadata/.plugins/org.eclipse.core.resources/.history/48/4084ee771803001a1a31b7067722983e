@@ -1,0 +1,31 @@
+#include <iostream>
+#include <tuple>
+#include <cstdint>
+#include <map>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+enum class Lang {
+  DE, FR, IT
+};
+
+struct Region {
+  string std_name;
+  string parent_std_name;
+  map<Lang, string> names;
+  int64_t population;
+};
+
+int FindMaxRepetitionCount(const vector<Region>& regions){
+	if(regions.size() == 0){
+		return 0;
+	}
+};
+
+int main() {
+	tuple t(7, "C++", true);
+	cout << get<1>(t) << endl;
+	return 0;
+}

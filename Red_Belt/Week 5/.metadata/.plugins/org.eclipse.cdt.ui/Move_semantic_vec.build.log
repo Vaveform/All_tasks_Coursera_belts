@@ -1,0 +1,19 @@
+22:15:52 **** Incremental Build of configuration Debug for project Move_semantic_vec ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Move_semantic_vec.o" "..\\src\\Move_semantic_vec.cpp" 
+In file included from ..\src\Move_semantic_vec.cpp:1:
+..\src\simple_vector_2.h: In instantiation of 'SimpleVector<T>::SimpleVector(size_t) [with T = std::__cxx11::basic_string<char>; size_t = long long unsigned int]':
+..\src\Move_semantic_vec.cpp:16:38:   required from here
+..\src\simple_vector_2.h:31:6: warning: 'SimpleVector<std::__cxx11::basic_string<char> >::data' will be initialized after [-Wreorder]
+   31 |   T* data = nullptr;
+      |      ^~~~
+..\src\simple_vector_2.h:29:10: warning:   'size_t SimpleVector<std::__cxx11::basic_string<char> >::SIZE' [-Wreorder]
+   29 |   size_t SIZE = 0;
+      |          ^~~~
+..\src\simple_vector_2.h:11:12: warning:   when initialized here [-Wreorder]
+   11 |   explicit SimpleVector(size_t size): data(new T[size]), SIZE(size), CAPACITY(size){};
+      |            ^~~~~~~~~~~~
+g++ -o Move_semantic_vec.exe "src\\Move_semantic_vec.o" 
+
+22:15:54 Build Finished. 0 errors, 3 warnings. (took 1s.812ms)
+

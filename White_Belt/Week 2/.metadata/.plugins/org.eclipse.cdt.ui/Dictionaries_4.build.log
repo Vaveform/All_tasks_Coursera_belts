@@ -1,0 +1,6 @@
+19:28:17 **** Incremental Build of configuration Debug for project Dictionaries_4 ****
+Info: Internal Builder is used for build
+g++ -o Dictionaries_4.exe "src\\Dictionaries_4.o" 
+
+19:28:17 Build Finished. 0 errors, 0 warnings. (took 250ms)
+

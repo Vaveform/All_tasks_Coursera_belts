@@ -1,0 +1,582 @@
+22:29:25 **** Rebuild of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:29:33 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp: In function 'int main()':
+..\src\Mathematical_expression.cpp:13:7: error: missing template arguments before '.' token
+  deque.push_back(("(" + to_string(initial) + "+"));
+       ^
+22:30:27 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp: In function 'int main()':
+..\src\Mathematical_expression.cpp:13:7: error: missing template arguments before '.' token
+  deque.push_back(to_string(initial));
+       ^
+22:30:46 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:31:21 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:34:58 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+22:35:57 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:36:27 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:39:01 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+22:40:32 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+23:07:18 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+23:20:34 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+23:20:52 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+23:21:55 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp: In function 'void first_expression_type()':
+..\src\Mathematical_expression.cpp:14:56: error: expected ';' before 'int'
+  expression.push_back(("(" + to_string(initial) + ")"))
+                                                        ^
+                                                        ;
+  int num_of_operation;
+  ~~~                                                    
+..\src\Mathematical_expression.cpp:16:9: error: 'num_of_operation' was not declared in this scope
+  cin >> num_of_operation;
+         ^~~~~~~~~~~~~~~~
+23:22:08 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+23:23:17 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+23:23:51 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+23:24:26 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+23:55:47 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp: In function 'void second_expression_type()':
+..\src\Mathematical_expression.cpp:74:29: error: no match for 'operator+' (operand types are 'const char [2]' and 'arithmetic_operation')
+   expression.push_back((" " + operation + " "));
+                         ~~~~^~~~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:397:5: note: candidate: 'template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)'
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:397:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'const std::reverse_iterator<_Iterator>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1192:5: note: candidate: 'template<class _Iterator> std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)'
+     operator+(typename move_iterator<_Iterator>::difference_type __n,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1192:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'const std::move_iterator<_IteratorL>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5888:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5888:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:53,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:1157:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator+(const _CharT* __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:1157:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:53,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:1173:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:1173:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5925:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)'
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5925:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5941:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)'
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5941:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5953:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5953:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5959:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)'
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5959:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5965:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)'
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5965:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5977:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)'
+     operator+(const _CharT* __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5977:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5983:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&)'
+     operator+(_CharT __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5983:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5989:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)'
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5989:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5995:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)'
+     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:5995:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const char [2]'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:65,
+                 from ..\src\Mathematical_expression.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:299:3: note: candidate: 'std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)'
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:299:3: note:   no known conversion for argument 2 from 'arithmetic_operation' to 'const std::_Bit_iterator&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:389:3: note: candidate: 'std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)'
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:389:3: note:   no known conversion for argument 2 from 'arithmetic_operation' to 'const std::_Bit_const_iterator&'
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/deque:64,
+                 from ..\src\Mathematical_expression.cpp:5:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:375:5: note: candidate: 'template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)'
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:375:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:74:31: note:   'arithmetic_operation' is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+   expression.push_back((" " + operation + " "));
+                               ^~~~~~~~~
+23:56:10 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+23:58:57 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+23:59:59 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:00:13 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:09:33 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp:15:83: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+  friend void operator=(arithmetic_operation& left,const arithmetic_operation right);
+                                                                                   ^
+..\src\Mathematical_expression.cpp:31:75: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+ void operator=(arithmetic_operation& left,const arithmetic_operation right){
+                                                                           ^
+..\src\Mathematical_expression.cpp: In function 'int main()':
+..\src\Mathematical_expression.cpp:104:2: error: expected initializer before 'cin'
+  cin >> right;
+  ^~~
+..\src\Mathematical_expression.cpp:105:9: error: no match for 'operator=' (operand types are 'arithmetic_operation' and 'std::ios_base&(std::ios_base&)')
+  left = right;
+         ^~~~~
+..\src\Mathematical_expression.cpp:9:8: note: candidate: 'arithmetic_operation& arithmetic_operation::operator=(const arithmetic_operation&)'
+ struct arithmetic_operation
+        ^~~~~~~~~~~~~~~~~~~~
+..\src\Mathematical_expression.cpp:9:8: note:   no known conversion for argument 1 from 'std::ios_base&(std::ios_base&)' to 'const arithmetic_operation&'
+..\src\Mathematical_expression.cpp:9:8: note: candidate: 'arithmetic_operation& arithmetic_operation::operator=(arithmetic_operation&&)'
+..\src\Mathematical_expression.cpp:9:8: note:   no known conversion for argument 1 from 'std::ios_base&(std::ios_base&)' to 'arithmetic_operation&&'
+00:09:40 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp:15:83: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+  friend void operator=(arithmetic_operation& left,const arithmetic_operation right);
+                                                                                   ^
+..\src\Mathematical_expression.cpp:31:75: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+ void operator=(arithmetic_operation& left,const arithmetic_operation right){
+                                                                           ^
+00:10:08 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp:15:77: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+  friend void operator=(arithmetic_operation& left,arithmetic_operation right);
+                                                                             ^
+..\src\Mathematical_expression.cpp:31:69: error: 'void operator=(arithmetic_operation&, arithmetic_operation)' must be a nonstatic member function
+ void operator=(arithmetic_operation& left,arithmetic_operation right){
+                                                                     ^
+00:16:00 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:25:28 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+00:40:58 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp: In function 'void second_expression_type()':
+..\src\Mathematical_expression.cpp:83:51: error: no match for 'operator>' (operand types are 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} and 'int')
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                               ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:64,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:462:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:462:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:317:5: note: candidate: 'template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+     operator>(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:317:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:355:5: note: candidate: 'template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+     operator>(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:355:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1160:5: note: candidate: 'template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+     operator>(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1160:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1166:5: note: candidate: 'template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+     operator>(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6132:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6132:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'int'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6145:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)'
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6145:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   mismatched types 'const _CharT*' and 'int'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6157:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator>(const _CharT* __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6157:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\Mathematical_expression.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:1778:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:1778:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/deque:64,
+                 from ..\src\Mathematical_expression.cpp:5:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:309:5: note: candidate: 'template<class _Tp, class _Ref, class _Ptr> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)'
+     operator>(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:309:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/deque:64,
+                 from ..\src\Mathematical_expression.cpp:5:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:316:5: note: candidate: 'template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator>(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)'
+     operator>(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:316:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/deque:64,
+                 from ..\src\Mathematical_expression.cpp:5:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:2310:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator>(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)'
+     operator>(const deque<_Tp, _Alloc>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_deque.h:2310:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::deque<_Tp, _Alloc>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:903:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator>(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+     operator>(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:903:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\Mathematical_expression.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:910:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator>(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+     operator>(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:910:5: note:   template argument deduction/substitution failed:
+..\src\Mathematical_expression.cpp:83:67: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   if(i != num_of_operation && operation.operation > tmp_operation.Priority)
+                                                                   ^~~~~~~~
+00:42:02 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+..\src\Mathematical_expression.cpp:20:84: error: 'bool arithmetic_operation::operator>(const arithmetic_operation&, const arithmetic_operation&)' must have exactly one argument
+  bool operator>(const arithmetic_operation& left, const arithmetic_operation& right);
+                                                                                    ^
+00:42:15 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:44:24 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:45:44 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:46:06 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+00:48:32 **** Incremental Build of configuration Debug for project Mathematical_expression ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Mathematical_expression.o" "..\\src\\Mathematical_expression.cpp" 
+g++ -o Mathematical_expression.exe "src\\Mathematical_expression.o" 
+Info: Nothing to build for Mathematical_expression
+Info: Nothing to build for Mathematical_expression

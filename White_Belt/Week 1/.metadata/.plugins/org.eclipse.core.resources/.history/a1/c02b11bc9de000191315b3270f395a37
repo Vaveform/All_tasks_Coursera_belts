@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+	vector<int> v;
+	int count = 0;
+	int num;
+	cin >> num;
+	int tmp = num;
+	while(num >= 2)
+	{
+		num /= 2;
+		count += 1;
+	}
+	num = tmp;
+	while(count >= 0)
+	{
+		cout << (num / pow(2, count))%2 << endl;
+		count--;
+	}
+}

@@ -1,0 +1,8 @@
+00:26:20 **** Incremental Build of configuration Debug for project Function_in_header ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Realization_of_func.o" "..\\src\\Realization_of_func.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Function_in_header.o" "..\\src\\Function_in_header.cpp" 
+g++ -o Function_in_header.exe "src\\Function_in_header.o" "src\\Realization_of_func.o" 
+
+00:26:21 Build Finished. 0 errors, 0 warnings. (took 1s.217ms)
+

@@ -1,0 +1,7 @@
+02:10:12 **** Incremental Build of configuration Debug for project Avarage_tempreture_2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avarage_tempreture_2.o" "..\\src\\Avarage_tempreture_2.cpp" 
+g++ -o Avarage_tempreture_2.exe "src\\Avarage_tempreture_2.o" 
+
+02:10:13 Build Finished. 0 errors, 0 warnings. (took 840ms)
+

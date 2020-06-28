@@ -1,0 +1,179 @@
+#include "test_runner.h"
+#include "profile.h"
+
+#include <map>
+#include <string>
+#include <string_view>
+#include <future>
+#include <vector>
+#include <functional>
+
+using namespace std;
+
+
+template <typename It>
+class IteratorRange{
+private:
+	It first;
+	It last;
+	size_t SIZE_PAGE;
+public:
+	IteratorRange(It f, It l, size_t s): first(f), last(l), SIZE_PAGE(s){};
+	It begin() const{
+		return first;
+	}
+	It end() const{
+		return last;
+	}
+	size_t size() const{
+		return SIZE_PAGE;
+	}
+};
+
+template <typename Iterator>
+class Paginator {
+private:
+	vector<IteratorRange<Iterator>> Values;
+	size_t SIZE;
+public:
+	Paginator(Iterator f, Iterator l, size_t s){
+		//cout << l - f << endl;
+		auto start_page = f;
+		auto end_page = f;
+		vector<IteratorRange<Iterator>> Pages;
+		while(end_page != l){
+			end_page = next(start_page, min(s, size_t(l - start_page)));
+			Pages.push_back(IteratorRange{start_page, end_page, size_t(end_page - start_page)});
+			start_page = end_page;
+		}
+		Values = Pages;
+		SIZE = Pages.size();
+		//cout << SIZE << endl;
+	};
+	auto begin() const
+	{
+		return Values.begin();
+	}
+	auto end() const
+	{
+		return Values.end();
+	}
+	size_t size() const {
+		return size_t(end() - begin());
+	}
+};
+
+template <typename C>
+auto Paginate(C& c, size_t page_size) {
+  return Paginator{c.begin(), c.end(), page_size};
+}
+
+//��������� ���������� ����������� ������ ������ � ������� �������
+int CountSubStrBetweenShifts(string_view line, const string& finded_string, int pos){
+	auto current_pos = line.find(finded_string, pos);
+	if(current_pos == line.npos)
+	{
+		return 0;
+	}
+	size_t before = current_pos == 0 ? 0 : current_pos - 1;
+	size_t after = current_pos + finded_string.size();
+ 	if((before == 0 && after == line.size()) ||
+ 			(before == 0 && line[after] == ' ') ||
+ 			(line[before] == ' ' && after == line.size()) ||
+			(line[before] == ' ' && line[after] == ' ')){
+		return 1 + CountSubStrBetweenShifts(line, finded_string, after);
+	}
+	return 0 + CountSubStrBetweenShifts(line, finded_string, after);
+}
+
+struct Stats {
+  map<string, int> word_frequences;
+
+  void operator += (const Stats& other){
+	  for(const auto& pair : other.word_frequences){
+		  this->word_frequences[pair.first] += pair.second;
+	  }
+  }
+};
+
+
+Stats ExploreLine(const set<string>& key_words, const string& line) {
+	Stats stat;
+	for(const auto& key_word : key_words)
+	{
+		int counted = CountSubStrBetweenShifts(line, key_word, 0);
+		if(counted != 0){
+			stat.word_frequences[key_word] += counted;
+		}
+	}
+	return stat;
+}
+
+Stats ExploreListOfLines(const set<string>& key_words, IteratorRange<vector<string>::iterator> Range){
+	Stats result;
+	for(auto it = Range.begin(); it != Range.end(); it++){
+		result += ExploreLine(key_words, *it);
+	}
+	return result;
+}
+
+Stats ExploreKeyWordsSingleThread(
+  const set<string>& key_words, istream& input
+) {
+  Stats result;
+  for (string line; getline(input, line); ) {
+    result += ExploreLine(key_words, line);
+  }
+  return result;
+}
+
+//Stats ExploreKeyWordsSingleThread(
+//  const set<string>& key_words, const vector<string>& inp
+//) {
+//  Stats result;
+//  for (string line : inp ) {
+//    result += ExploreLine(key_words, line);
+//  }
+//  return result;
+//}
+
+Stats ExploreKeyWords(const set<string>& key_words, istream& input) {
+    Stats result;
+    size_t num_threads = 4;
+    vector<future<Stats>> futures;
+    vector<string> strings;
+    for(string line; getline(input, line);){
+		strings.push_back(move(line));
+	}
+    for(auto elem : Paginate(strings, num_threads)){
+    	futures.push_back(async(ExploreListOfLines, ref(key_words), ref(elem)));
+    }
+    for(auto& f : futures){
+    	result += f.get();
+    }
+	return result;
+}
+
+void TestBasic() {
+  const set<string> key_words = {"yangle", "rocks", "sucks", "all"};
+
+  stringstream ss;
+  ss << "this new yangle service really rocks\n";
+  ss << "It sucks when yangle isn't available\n";
+  ss << "10 reasons why yangle is the best IT company\n";
+  ss << "yangle rocks others suck\n";
+  ss << "Goondex really sucks, but yangle rocks. Use yangle\n";
+  const auto stats = ExploreKeyWords(key_words, ss);
+  const map<string, int> expected = {
+    {"yangle", 6},
+    {"rocks", 2},
+    {"sucks", 1}
+  };
+  ASSERT_EQUAL(stats.word_frequences, expected);
+}
+
+int main() {
+  TestRunner tr;
+  RUN_TEST(tr, TestBasic);
+	return 0;
+}

@@ -1,0 +1,53 @@
+#include <iostream>
+#include <map>
+#include <utility>
+#include <tuple>
+
+using namespace std;
+
+class TeamTasks{
+private:
+	map<string, TasksInfo> Team;
+public:
+	 const TasksInfo& GetPersonTasksInfo(const string& person) const
+	 {
+		 return Team.at(person);
+	 }
+	 void AddNewTask(const string& person)
+	 {
+		 Team[person][TaskStatus::NEW]++;
+	 }
+	  tuple<TasksInfo, TasksInfo> PerformPersonTasks(
+	      const string& person, int task_count){
+		  int unperformed = Team[person][TaskStatus::NEW] +
+				  Team[person][TaskStatus::IN_PROGRESS] +
+				  Team[person][TaskStatus::TESTING];
+		  if(task_count > unperformed){
+			  task_count = unperformed;
+		  }
+		  TasksInfo Updated;
+		  for(const auto& item: Team[person]){
+			  if(task_count != 0)
+			  {
+				  Updated[item.first] = task_count - item.second;
+				  if(Updated[item.first] >= 0){
+					  task_count = Updated[item.first];
+					  Updated[item.first] = item.second;
+				  }
+				  else{
+					  Updated[item.first] = item.second - Updated[item.first];
+					  task_count = 0;
+				  }
+			  }
+		  }
+		  for(const auto& item: Updated)
+		  {
+			  Team[person][item.first] -= item.second;
+		  }
+		  return tie(Updated, Team.at(person));
+	  }
+};
+
+int main() {
+	return 0;
+}

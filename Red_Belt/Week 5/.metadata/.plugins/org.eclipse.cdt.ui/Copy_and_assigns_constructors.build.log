@@ -1,0 +1,7 @@
+17:29:05 **** Incremental Build of configuration Debug for project Copy_and_assigns_constructors ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Copy_and_assigns_constructors.o" "..\\src\\Copy_and_assigns_constructors.cpp" 
+g++ -o Copy_and_assigns_constructors.exe "src\\Copy_and_assigns_constructors.o" 
+
+17:29:07 Build Finished. 0 errors, 0 warnings. (took 1s.434ms)
+

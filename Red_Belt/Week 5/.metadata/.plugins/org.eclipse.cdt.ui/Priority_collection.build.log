@@ -1,0 +1,11 @@
+19:00:27 **** Incremental Build of configuration Debug for project Priority_collection ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Priority_collection.o" "..\\src\\Priority_collection.cpp" 
+..\src\Priority_collection.cpp: In function 'void TestNoCopy()':
+..\src\Priority_collection.cpp:92:14: warning: unused variable 'white_id' [-Wunused-variable]
+   92 |   const auto white_id = strings.Add("white");
+      |              ^~~~~~~~
+g++ -o Priority_collection.exe "src\\Priority_collection.o" 
+
+19:00:29 Build Finished. 0 errors, 1 warnings. (took 1s.978ms)
+

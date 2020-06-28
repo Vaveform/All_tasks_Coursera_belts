@@ -1,0 +1,33 @@
+
+
+#include <vector>
+#include <utility>
+#include <iostream>
+
+using namespace std;
+
+template<typename T> class Table{
+public:
+	vector<vector<T>> table;
+public:
+	Table(size_t nums_of_rows, size_t nums_of_columns){
+		Resize(nums_of_rows, nums_of_columns);
+	}
+	void Resize(size_t nums_of_rows, size_t nums_of_columns){
+		table.resize(nums_of_rows);
+		for(auto& elem: table){
+			elem.resize(nums_of_columns);
+		}
+	}
+	pair<size_t, size_t> Size() const {
+		return make_pair(table.size(), table.size() == 0 ? 0 : table[0].size());
+	}
+};
+
+
+
+int main() {
+  Table<int> my_table(0u, 0u);
+  cout << "Rows: " << my_table.Size().first << " Columns: " << my_table.Size().second << endl;
+  return 0;
+}

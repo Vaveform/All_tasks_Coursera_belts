@@ -1,0 +1,51 @@
+//============================================================================
+// Name        : FindNearestElement.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <set>
+#include <algorithm>
+
+using namespace std;
+
+set<int>::const_iterator FindNearestElement(const set<int>& numbers,int border)
+{
+    if(numbers.empty())
+    {
+        return numbers.end();
+    }
+    else if(border <= *numbers.begin())
+    {
+        return numbers.lower_bound(border);
+    }
+    else if(border >= *prev(numbers.end()))
+    {
+        return prev(numbers.upper_bound(border));
+    }
+    else
+    {
+        auto it = numbers.lower_bound(border);
+        auto it_prev = prev(it);
+        auto it_next = (numbers.find(border) != numbers.end() ? next(it) : it);
+        return border - *it_prev <= *it_next - border ? it_prev : it_next;
+    }
+}
+
+int main()
+{
+    set<int> numbers = {1, 4, 6};
+    cout << *FindNearestElement(numbers, -100) << endl;
+    cout << *FindNearestElement(numbers, 1) << endl;
+    cout << *FindNearestElement(numbers, 3) << endl;
+    cout << *FindNearestElement(numbers, 5) << endl;
+    cout << *FindNearestElement(numbers, 6) << endl;
+    cout << *FindNearestElement(numbers, 100) << endl;
+    set<int> empty_set;
+    cout << (FindNearestElement(empty_set, 8) == end(empty_set)) << endl;
+    return 0;
+
+}

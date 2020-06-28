@@ -1,0 +1,7 @@
+23:23:41 **** Incremental Build of configuration Debug for project Exception_EnsureEqual ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exception_EnsureEqual.o" "..\\src\\Exception_EnsureEqual.cpp" 
+g++ -o Exception_EnsureEqual.exe "src\\Exception_EnsureEqual.o" 
+
+23:23:42 Build Finished. 0 errors, 0 warnings. (took 648ms)
+

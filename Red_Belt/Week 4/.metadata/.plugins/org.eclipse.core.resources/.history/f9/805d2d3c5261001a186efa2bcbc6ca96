@@ -1,0 +1,42 @@
+#include "stats.h"
+
+Stats::Stats(){
+	for(size_t i = 0; i < Stats::methods.size(); ++i){
+		Stats::methods_stat[Stats::methods[i]] = 0;
+		Stats::urls_stat[Stats::urls[i]] = 0;
+	}
+	Stats::urls_stat[Stats::urls[Stats::urls.size() - 1]] = 0;
+}
+
+void Stats::AddMethod(string_view method){
+	if(Stats::methods_stat.find(method) == Stats::methods_stat.end()){
+		Stats::methods_stat[Stats::methods[Stats::methods.size() - 1]] += 1;
+	}
+	else{
+		Stats::methods_stat[method] += 1;
+	}
+}
+
+void Stats::AddUri(string_view uri){
+	if(Stats::urls_stat.find(uri) == Stats::urls_stat.end()){
+		Stats::urls_stat[Stats::urls[Stats::urls.size() - 1]] += 1;
+	}
+	else{
+		Stats::urls_stat[uri] += 1;
+	}
+}
+
+const map<string_view, int>& Stats::GetMethodStats() const {
+	return Stats::methods_stat;
+}
+
+const map<string_view, int>& Stats::GetUriStats() const {
+	return Stats::urls_stat;
+}
+
+HttpRequest ParseRequest(string_view line){
+	istringstream is(string(line));
+	HttpRequest http_fields;
+	is >> http_fields.method >> http_fields.uri >> http_fields.protocol;
+	return http_fields;
+}

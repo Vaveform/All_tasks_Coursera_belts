@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Function_in_header/src/Header_function.h&apos; to &apos;sum_reverse_sort.h&apos;" description="Rename resource &apos;Header_function.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Header_function.h" name="sum_reverse_sort.h" stamp="1574025963694" updateReferences="true"/>
+</session>

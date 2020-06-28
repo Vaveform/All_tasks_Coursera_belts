@@ -1,0 +1,39 @@
+#include <iostream>
+#include "phone_number.h"
+#include "test_runner.h"
+using namespace std;
+
+void Test_to_good_numbers()
+{
+	{
+	    PhoneNumber p("+7-495-111-22-33");
+	    AssertEqual(p.GetCountryCode(), "7", "1 test in number: +7-495-111-22-33");
+	    AssertEqual(p.GetCityCode(), "495", "2 test in number: +7-495-111-22-33");
+	    AssertEqual(p.GetLocalNumber(), "111-22-33", "3 test in number: +7-495-111-22-33");
+	}
+	{
+		 PhoneNumber p("+7-495-1112233");
+		 AssertEqual(p.GetCountryCode(), "7", "1 test in number: +7-495-1112233");
+		 AssertEqual(p.GetCityCode(), "495", "2 test in number: +7-495-1112233");
+		 AssertEqual(p.GetLocalNumber(), "1112233", "3 test in number: +7-495-1112233");
+	}
+	{
+		 PhoneNumber p("+323-22-460002");
+		 AssertEqual(p.GetCountryCode(), "323", "1 test in number: +323-22-460002");
+		 AssertEqual(p.GetCityCode(), "22", "2 test in number: +323-22-460002");
+		 AssertEqual(p.GetLocalNumber(), "460002", "3 test in number: +323-22-460002");
+	}
+	{
+		 PhoneNumber p("+1-2-coursera-cpp");
+		 AssertEqual(p.GetCountryCode(), "1", "1 test in number: +1-2-coursera-cpp");
+		 AssertEqual(p.GetCityCode(), "2", "2 test in number: +1-2-coursera-cpp");
+		 AssertEqual(p.GetLocalNumber(), "coursera-cpp", "3 test in number: +1-2-coursera-cpp");
+	}
+}
+
+int main() {
+	TestRunner runner;
+	runner.RunTest(Test_to_good_numbers, "Test_to_good_numbers");
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}

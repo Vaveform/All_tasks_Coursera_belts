@@ -1,0 +1,585 @@
+Info: Nothing to build for DIctionaries_3
+21:39:55 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void new_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, int&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:57:19: error: no match for 'operator=' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} and 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'})
+   stopses[stop] = bus;
+                   ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:69,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<std::__cxx11::basic_string<char> >&'
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<std::__cxx11::basic_string<char> >&&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(initializer_list<value_type> __l)
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::initializer_list<std::__cxx11::basic_string<char> >'
+..\src\DIctionaries_3.cpp: In function 'void buses_for_stop(const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:78:15: error: 'routes' was not declared in this scope
+   PrintVector(routes[stop]);
+               ^~~~~~
+..\src\DIctionaries_3.cpp:78:15: note: suggested alternative: '_putws'
+   PrintVector(routes[stop]);
+               ^~~~~~
+               _putws
+..\src\DIctionaries_3.cpp: In function 'int main()':
+..\src\DIctionaries_3.cpp:144:20: error: invalid initialization of reference of type 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&' from expression of type 'int'
+    new_bus(routes, num_of_routes, name_route);
+                    ^~~~~~~~~~~~~
+..\src\DIctionaries_3.cpp:50:6: note: in passing argument 2 of 'void new_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, int&, std::__cxx11::string)'
+ void new_bus(map<string, vector<string>>& routes, map<string, vector<string>>& stopses, int& size ,string bus)
+      ^~~~~~~
+21:40:10 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void new_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, int&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:57:19: error: no match for 'operator=' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} and 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'})
+   stopses[stop] = bus;
+                   ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:69,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<std::__cxx11::basic_string<char> >&'
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<std::__cxx11::basic_string<char> >&&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(initializer_list<value_type> __l)
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::initializer_list<std::__cxx11::basic_string<char> >'
+..\src\DIctionaries_3.cpp: In function 'void buses_for_stop(const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:78:27: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   PrintVector(stopses[stop]);
+                           ^
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:490:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+       operator[](const key_type& __k)
+       ^~~~~~~~
+..\src\DIctionaries_3.cpp: In function 'int main()':
+..\src\DIctionaries_3.cpp:144:20: error: invalid initialization of reference of type 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&' from expression of type 'int'
+    new_bus(routes, num_of_routes, name_route);
+                    ^~~~~~~~~~~~~
+..\src\DIctionaries_3.cpp:50:6: note: in passing argument 2 of 'void new_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, int&, std::__cxx11::string)'
+ void new_bus(map<string, vector<string>>& routes, map<string, vector<string>>& stopses, int& size ,string bus)
+      ^~~~~~~
+21:40:36 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void new_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, int&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:57:19: error: no match for 'operator=' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} and 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'})
+   stopses[stop] = bus;
+                   ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:69,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc:186:5: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<std::__cxx11::basic_string<char> >&'
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:596:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<std::__cxx11::basic_string<char> >&&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note: candidate: 'std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       operator=(initializer_list<value_type> __l)
+       ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:617:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::initializer_list<std::__cxx11::basic_string<char> >'
+..\src\DIctionaries_3.cpp: In function 'void buses_for_stop(const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:78:27: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   PrintVector(stopses[stop]);
+                           ^
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:490:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+       operator[](const key_type& __k)
+       ^~~~~~~~
+21:40:58 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void buses_for_stop(const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:78:27: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   PrintVector(stopses[stop]);
+                           ^
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:490:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+       operator[](const key_type& __k)
+       ^~~~~~~~
+21:41:11 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:41:20 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+21:54:17 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+21:58:19 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:00:08 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:00:14 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:01:45 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:01:50 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:08:37 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:08:43 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:09:20 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:09:24 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:09:44 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:09:48 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:11:27 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void stops_for_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:119:21: error: no match for 'operator==' (operand types are 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} and 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'})
+    if(stopses[elem] == bus)
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:216:5: note: candidate: 'template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)'
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::fpos<_StateT>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:64,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:443:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:443:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::pair<_T1, _T2>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:299:5: note: candidate: 'template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:299:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::reverse_iterator<_Iterator>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:337:5: note: candidate: 'template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:337:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::reverse_iterator<_Iterator>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1112:5: note: candidate: 'template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1112:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::move_iterator<_IteratorL>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1118:5: note: candidate: 'template<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+     operator==(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::move_iterator<_IteratorL>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:146:5: note: candidate: 'template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)'
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:146:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::allocator<_CharT>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:152:5: note: candidate: 'template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)'
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:152:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::allocator<_CharT>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6009:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6009:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6017:5: note: candidate: 'template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)'
+     operator==(const basic_string<_CharT>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6017:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::__cxx11::basic_string<_CharT>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6031:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator==(const _CharT* __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6031:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   mismatched types 'const _CharT*' and 'std::vector<std::__cxx11::basic_string<char> >'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:52,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6043:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)'
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:6043:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:46,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:292:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_code&)'
+   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:292:3: note:   no known conversion for argument 1 from 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} to 'const std::error_code&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:297:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_condition&)'
+   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:297:3: note:   no known conversion for argument 1 from 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} to 'const std::error_code&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:304:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_code&)'
+   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:304:3: note:   no known conversion for argument 1 from 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} to 'const std::error_condition&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:311:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_condition&)'
+   operator==(const error_condition& __lhs,
+   ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:311:3: note:   no known conversion for argument 1 from 'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} to 'const std::error_condition&'
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h:48,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:37,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:44,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:203:5: note: candidate: 'template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)'
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:203:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:60,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h:406:5: note: candidate: 'template<class _Val> bool std::operator==(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)'
+     operator==(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h:406:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::_Rb_tree_iterator<_Tp>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:60,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h:1549:5: note: candidate: 'template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator==(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)'
+     operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h:1549:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:63,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:252:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:252:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::array<_Tp, _Nm>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:63,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:1413:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+     operator==(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:1413:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::tuple<_Tps ...>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:61,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:1435:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)'
+     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h:1435:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map:62,
+                 from ..\src\DIctionaries_3.cpp:2:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h:1100:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)'
+     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h:1100:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:1748:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:1748:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:860:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:860:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:67,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:39,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:867:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:867:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+    if(stopses[elem] == bus)
+                        ^~~
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:33,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:46,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:40,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:41,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:42,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:38,
+                 from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:39,
+                 from ..\src\DIctionaries_3.cpp:1:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:155:5: note: candidate: 'template<class _Tp> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)'
+     operator==(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:155:5: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:24: note:   'std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >::mapped_type' {aka 'std::vector<std::__cxx11::basic_string<char> >'} is not derived from 'const __gnu_cxx::new_allocator<_Tp>'
+    if(stopses[elem] == bus)
+                        ^~~
+22:12:04 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+..\src\DIctionaries_3.cpp: In function 'void stops_for_bus(std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >&, std::__cxx11::string)':
+..\src\DIctionaries_3.cpp:119:42: error: no matching function for call to 'std::vector<std::__cxx11::basic_string<char> >::vector(std::__cxx11::string&)'
+    if(stopses[elem] == vector<string>(bus))
+                                          ^
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:543:2: note: candidate: 'template<class _InputIterator, class> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)'
+  vector(_InputIterator __first, _InputIterator __last,
+  ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:543:2: note:   template argument deduction/substitution failed:
+..\src\DIctionaries_3.cpp:119:42: note:   candidate expects 3 arguments, 1 provided
+    if(stopses[elem] == vector<string>(bus))
+                                          ^
+In file included from C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector:64,
+                 from ..\src\DIctionaries_3.cpp:4:
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:515:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(initializer_list<value_type> __l,
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:515:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::initializer_list<std::__cxx11::basic_string<char> >'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:490:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(vector&& __rv, const allocator_type& __m)
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:490:7: note:   candidate expects 2 arguments, 1 provided
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:480:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(const vector& __x, const allocator_type& __a)
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:480:7: note:   candidate expects 2 arguments, 1 provided
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:476:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(vector&& __x) noexcept
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:476:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<std::__cxx11::basic_string<char> >&&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:458:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(const vector& __x)
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:458:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const std::vector<std::__cxx11::basic_string<char> >&'
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:427:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = long long unsigned int; std::vector<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(size_type __n, const value_type& __value,
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:427:7: note:   candidate expects 3 arguments, 1 provided
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:415:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::size_type = long long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(size_type __n, const allocator_type& __a = allocator_type())
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:415:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'}
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:402:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:402:7: note:   no known conversion for argument 1 from 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const allocator_type&' {aka 'const std::allocator<std::__cxx11::basic_string<char> >&'}
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:391:7: note: candidate: 'std::vector<_Tp, _Alloc>::vector() [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+       vector()
+       ^~~~~~
+C:/dev/mingw64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:391:7: note:   candidate expects 0 arguments, 1 provided
+22:12:35 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:18:08 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:18:14 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:21:25 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+C:/dev/mingw64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file DIctionaries_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:21:34 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:22:54 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:26:47 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:27:27 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 
+22:29:09 **** Incremental Build of configuration Debug for project DIctionaries_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DIctionaries_3.o" "..\\src\\DIctionaries_3.cpp" 
+g++ -o DIctionaries_3.exe "src\\DIctionaries_3.o" 

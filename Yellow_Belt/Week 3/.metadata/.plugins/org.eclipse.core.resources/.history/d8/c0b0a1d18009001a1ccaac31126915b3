@@ -1,0 +1,21 @@
+#include "Header_function.h"
+#include <algorithm>
+
+int Sum(int x, int y){
+	return x+y;
+}
+
+string Reverse(string s){
+	string result;
+	reverse(s.begin(), s.end());
+	result = s;
+	return result;
+}
+
+void Sort(vector<int>& nums){
+	sort(nums.begin(), nums.end());
+}
+
+
+
+

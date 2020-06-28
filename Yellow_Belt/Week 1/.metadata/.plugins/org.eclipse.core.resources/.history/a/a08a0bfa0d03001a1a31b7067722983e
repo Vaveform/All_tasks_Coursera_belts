@@ -1,0 +1,9 @@
+#include <iostream>
+#include <tuple>
+using namespace std;
+
+int main() {
+	tuple t(7, "C++", true);
+	cout << get<1>(1) << endl;
+	return 0;
+}

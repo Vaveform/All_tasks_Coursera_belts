@@ -1,0 +1,85 @@
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <vector>
+using namespace std;
+
+void PrintSet(const set<string>& w)
+{
+	for(const auto& elem: w)
+	{
+		cout << elem << " ";
+	}
+	cout << endl;
+}
+void PrintDict(const map<string, set<string>> dict)
+{
+	for(const auto& item: dict)
+	{
+		cout << item.first << ":";
+		PrintVector(item.second);
+	}
+}
+void add(map<string, set<string>>& to_be_added, string word1, string word2)
+{
+	set<string> tmp = {word1, word2};
+	to_be_added[word1].insert(tmp.begin(), tmp.end());
+}
+//void check(const set<set<string>>& to_be_checked, string word1, string word2)
+//{
+//	set<string> to_check = {word1, word2};
+//	bool flag = false;
+//	for(const auto& elem: to_be_checked)
+//	{
+//		if(elem == to_check)
+//		{
+//			flag = true;
+//			break;
+//		}
+//	}
+//	flag ? cout << "YES" << endl : cout << "NO" << endl;
+//}
+//void count(const set<set<string>>& to_be_count, string word)
+//{
+//	int result = 0;
+//	for(const auto& elem: to_be_count)
+//	{
+//		result += elem.count(word);
+//	}
+//	cout << result << endl;
+//}
+
+int main()
+{
+	map<string, set<string>> dict;
+	int num_of_operation;
+	string operation;
+	cin >> num_of_operation;
+	while(num_of_operation > 0)
+	{
+		cin >> operation;
+		if(operation == "ADD")
+		{
+			string word1, word2;
+			cin >> word1 >> word2;
+			add(dict, word1, word2);
+		}
+//		else if(operation == "CHECK")
+//		{
+//			string word1, word2;
+//			cin >> word1 >> word2;
+//			check(dict, word1, word2);
+//		}
+//		else
+//		{
+//			string counted_word;
+//			cin >> counted_word;
+//			count(dict, counted_word);
+//		}
+		num_of_operation--;
+	}
+	PrintDict(dict);
+
+	return 0;
+}

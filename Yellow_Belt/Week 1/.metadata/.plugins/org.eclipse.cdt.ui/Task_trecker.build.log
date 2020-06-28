@@ -1,0 +1,17 @@
+20:42:54 **** Incremental Build of configuration Debug for project Task_trecker ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Task_trecker.o" "..\\src\\Task_trecker.cpp" 
+..\src\Task_trecker.cpp: In member function 'const TasksInfo& TeamTasks::GetPersonTasksInfo(const string&) const':
+..\src\Task_trecker.cpp:30:9: warning: reference to local variable 'result' returned [-Wreturn-local-addr]
+    auto result = Team.at(person);
+         ^~~~~~
+..\src\Task_trecker.cpp: In member function 'std::tuple<std::map<TaskStatus, int, std::less<TaskStatus>, std::allocator<std::pair<const TaskStatus, int> > >, std::map<TaskStatus, int, std::less<TaskStatus>, std::allocator<std::pair<const TaskStatus, int> > > > TeamTasks::PerformPersonTasks(const string&, int)':
+..\src\Task_trecker.cpp:55:26: error: no match for 'operator+' (operand types are 'const TaskStatus' and 'int')
+        Updated[item.first+1] = item.second;
+                ~~~~~~~~~~^~
+..\src\Task_trecker.cpp:59:26: error: no match for 'operator+' (operand types are 'const TaskStatus' and 'int')
+        Updated[item.first+1] = item.second - Updated[item.first];
+                ~~~~~~~~~~^~
+
+20:42:54 Build Failed. 2 errors, 1 warnings. (took 554ms)
+

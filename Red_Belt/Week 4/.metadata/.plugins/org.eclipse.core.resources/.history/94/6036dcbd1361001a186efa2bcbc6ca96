@@ -1,0 +1,22 @@
+#include "stats.h"
+
+Stats::Stats(){
+	for(size_t i = 0; i < Stats::methods.size(); ++i){
+		Stats::methods_stat[Stats::methods[i]] = 0;
+		Stats::urls_stat[Stats::urls[i]] = 0;
+	}
+	Stats::urls_stat[Stats::urls[Stats::urls.size() - 1]] = 0;
+}
+
+void Stats::AddMethod(string_view method){
+	if(Stats::methods_stat.find(method) == Stats::methods_stat.end()){
+		Stats::methods_stat[Stats::methods[Stats::methods.size() - 1]] += 1;
+	}
+	else{
+		methods_stat[method] += 1;
+	}
+}
+
+
+
+

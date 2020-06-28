@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Macros_Update_field/src/Macros_Update_field.cpp&apos; to &apos;update_field.cpp&apos;" description="Rename resource &apos;Macros_Update_field.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Macros_Update_field.cpp" name="update_field.cpp" stamp="1580074982927" updateReferences="true"/>
+</session>

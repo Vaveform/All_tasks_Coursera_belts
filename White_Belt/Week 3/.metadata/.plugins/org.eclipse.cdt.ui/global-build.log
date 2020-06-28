@@ -1,0 +1,11 @@
+14:57:36 **** Incremental Build of configuration Debug for project History_person_3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\History_person_3.o" "..\\src\\History_person_3.cpp" 
+..\src\History_person_3.cpp: In member function 'std::__cxx11::string Person::GetFullNameWithHistory(int) const':
+..\src\History_person_3.cpp:41:49: warning: comparison of integer expressions of different signedness: 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} and 'int' [-Wsign-compare]
+   else if(result.find("with unknown last name") != -1)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\History_person_3.cpp:46:50: warning: comparison of integer expressions of different signedness: 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} and 'int' [-Wsign-compare]
+   else if(result.find("with unknown first name") != -1)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+g++ -o History_person_3.exe "src\\History_person_3.o" 

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Cmp_generator/src/airline_ticket.c&apos; to &apos;airline_ticket.cpp&apos;" description="Rename resource &apos;airline_ticket.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/airline_ticket.c" name="airline_ticket.cpp" stamp="1579988252147" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Cmp_generator/src/Cmp_generator.cpp&apos; to &apos;sort_by.cpp&apos;" description="Rename resource &apos;Cmp_generator.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Cmp_generator.cpp" name="sort_by.cpp" stamp="1579994053828" updateReferences="true"/>
+</session>

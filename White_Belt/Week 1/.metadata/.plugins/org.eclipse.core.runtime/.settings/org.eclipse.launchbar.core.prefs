@@ -1,0 +1,15 @@
+LaunchTargetManager/configs/Sum\ A+B.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/even_number.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/hello.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/min_string.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/quation.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:hello.exe,org.eclipse.launchbar.core.descriptorType.default\:Sum A+B.exe,org.eclipse.launchbar.core.descriptorType.default\:min_string.exe,org.eclipse.launchbar.core.descriptorType.default\:quation.exe,org.eclipse.launchbar.core.descriptorType.default\:Divide.exe,org.eclipse.launchbar.core.descriptorType.default\:Boughts.exe,org.eclipse.launchbar.core.descriptorType.default\:even_number.exe,org.eclipse.launchbar.core.descriptorType.default\:Symbol.exe,org.eclipse.launchbar.core.descriptorType.default\:Evklid_algorithm.exe,org.eclipse.launchbar.core.descriptorType.default\:binary_number.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Sum\ A+B.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:hello.exe/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:hello.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:min_string.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:quation.exe/activeLaunchMode=run

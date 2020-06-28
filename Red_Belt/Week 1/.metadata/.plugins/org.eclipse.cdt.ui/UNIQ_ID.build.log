@@ -1,0 +1,20 @@
+21:58:52 **** Incremental Build of configuration Debug for project UNIQ_ID ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\UNIQ_ID.o" "..\\src\\UNIQ_ID.cpp" 
+..\src\UNIQ_ID.cpp: In function 'int main()':
+..\src\UNIQ_ID.cpp:7:27: warning: unused variable 'variable_on_line_12' [-Wunused-variable]
+ #define macro3(code_line) variable_on_line_##code_line
+                           ^~~~~~~~~~~~~~~~~
+..\src\UNIQ_ID.cpp:8:27: note: in expansion of macro 'macro3'
+ #define macro1(code_line) macro3(code_line)
+                           ^~~~~~
+..\src\UNIQ_ID.cpp:9:17: note: in expansion of macro 'macro1'
+ #define UNIQ_ID macro1(__LINE__)
+                 ^~~~~~
+..\src\UNIQ_ID.cpp:12:6: note: in expansion of macro 'UNIQ_ID'
+  int UNIQ_ID = 0;
+      ^~~~~~~
+g++ -o UNIQ_ID.exe "src\\UNIQ_ID.o" 
+
+21:58:53 Build Finished. 0 errors, 1 warnings. (took 686ms)
+
