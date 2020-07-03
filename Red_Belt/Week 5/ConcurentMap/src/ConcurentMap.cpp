@@ -19,9 +19,7 @@ public:
 
   struct Access {
 	lock_guard<mutex> guard;
-	map<K, V>& ref_to_map;
-	K& ref_to_key;
-	V& ref_to_value = ref_to_map[ref_to_key];
+	V& ref_to_value;
   };
 
   explicit ConcurrentMap(size_t bucket_count):maps(bucket_count), mutexes(bucket_count){};
@@ -32,15 +30,14 @@ public:
 //	  V& ref_to_values = maps[key % maps.size()][key];
 //	  cout << ref_to_values << endl;
 //	  mutexes[key % mutexes.size()].lock();
-	  return {lock_guard(mutexes[key % mutexes.size()]), maps[key % maps.size()], key};
+	  return {lock_guard(mutexes[key % mutexes.size()]), maps[key % maps.size()][key]};
   }
 
   map<K, V> BuildOrdinaryMap(){
-	  cout << "Working ordinary map" << endl;
 	  map<K, V> dst;
-	  vector<map<K, V>> copied = maps;
-	  for(auto& elem : copied){
-		  dst.merge(elem);
+	  for(size_t i = 0; i < maps.size(); i++){
+		  lock_guard<mutex> tg(mutexes[i]);
+		  dst.merge(maps[i]);
 	  }
 	  return dst;
   }
@@ -129,31 +126,6 @@ void TestSpeedup() {
     LOG_DURATION("100 locks");
     RunConcurrentUpdates(many_locks, 4, 50000);
   }
-}
-
-class Simple_Class{
-public:
-	Simple_Class(){
-		cout << "Working constructor" << endl;
-	}
-	~Simple_Class(){
-		cout << "Working destructor" << endl;
-	}
-};
-
-Simple_Class test_class(){
-	Simple_Class k;
-	return k;
-}
-
-void func1(ConcurrentMap<int, int>& CM){
-	cout << "Func1" << endl;
-	CM[15].ref_to_value++;
-}
-
-void func2(ConcurrentMap<int, int>& CM){
-	cout << "Func2" << endl;
-	CM[21].ref_to_value++;
 }
 
 int main() {

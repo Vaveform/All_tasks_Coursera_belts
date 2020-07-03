@@ -15,7 +15,6 @@ template <typename T>
 class Synchronized {
 public:
   explicit Synchronized(T initial = T()) : value(move(initial)){
-
   }
 
   struct Access {
