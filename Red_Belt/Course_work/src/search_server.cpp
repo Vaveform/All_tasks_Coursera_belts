@@ -84,8 +84,8 @@ void SearchServer::AddQueriesStreamOneThread(istream& query_input, ostream& sear
 }
 
 void SearchServer::AddQueriesStream(istream& query_input, ostream& search_results_output) {
-//	async_threads.push_back(async(launch::async, &SearchServer::AddQueriesStreamOneThread, this, ref(query_input), ref(search_results_output)));
-	AddQueriesStreamOneThread(query_input, search_results_output);
+	async_threads.push_back(async(launch::async, &SearchServer::AddQueriesStreamOneThread, this, ref(query_input), ref(search_results_output)));
+//	AddQueriesStreamOneThread(query_input, search_results_output);
 }
 
 void InvertedIndex::Add(const string& document) {
