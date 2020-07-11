@@ -10,7 +10,28 @@
 #include <map>
 #include <string>
 #include <string_view>
+#include <mutex>
+#include <future>
 using namespace std;
+
+template <typename T>
+class Synchronized {
+public:
+  explicit Synchronized(T initial = T()) : value(move(initial)){
+  }
+
+  struct Access {
+      T& ref_to_value;
+      lock_guard<mutex> ref_to_mutex;
+  };
+
+  Access GetAccess(){
+	  return {value, lock_guard(to_mutex)};
+  }
+private:
+  T value;
+  mutex to_mutex;
+};
 
 class InvertedIndex {
 public:
@@ -35,8 +56,9 @@ public:
   SearchServer() = default;
   explicit SearchServer(istream& document_input);
   void UpdateDocumentBase(istream& document_input);
+  void AddQueriesStreamOneThread(istream& query_input, ostream& search_results_output);
   void AddQueriesStream(istream& query_input, ostream& search_results_output);
-
 private:
-  InvertedIndex index;
+  Synchronized<InvertedIndex> index;
+  vector<future<void>> async_threads;
 };

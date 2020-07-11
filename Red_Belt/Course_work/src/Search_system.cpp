@@ -240,17 +240,31 @@ void TestHeavySearch() {
   istringstream queries_input(Join('\n', queries));
 
   SearchServer srv;
-  LOG_DURATION("UpdateDocumentBase test "){
-     srv.UpdateDocumentBase(docs_input);
-  }
+  srv.UpdateDocumentBase(docs_input);
   ostringstream queries_output;
-  LOG_DURATION("AddQuerisStream test "){
-     srv.AddQueriesStream(queries_input, queries_output);
-  }
+  srv.AddQueriesStream(queries_input, queries_output);
 
 	const string result = queries_output.str();
 	const auto lines = SplitBy(Strip(result), '\n');
 }
+
+//void TestSearchServer(vector<pair<istream, ostream*>> streams) {
+//  // IteratorRange — шаблон из задачи Paginator
+//  // random_time() — функция, которая возвращает случайный
+//  // промежуток времени
+//
+//  LOG_DURATION("Total");
+//  SearchServer srv(streams.front().first);
+//  for (auto& [input, output] :
+//       IteratorRange(begin(streams) + 1, end(streams))) {
+//    this_thread::sleep_for(random_time());
+//    if (!output) {
+//      srv.UpdateDocumentBase(input);
+//    } else {
+//      srv.AddQueriesStream(input, *output);
+//    }
+//  }
+//}
 
 
 int main() {
