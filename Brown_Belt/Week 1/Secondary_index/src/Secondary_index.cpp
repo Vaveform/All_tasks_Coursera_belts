@@ -22,12 +22,17 @@ struct Record {
 // Р РµР°Р»РёР·СѓР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ
 class Database {
 public:
+
   bool Put(const Record& record){
 	  if(id_to_record.count(record.id) == 0){
-		  auto iterator_to_inserted = id_to_record.emplace(record.id, record);
-		  timestamp_to_iterator.emplace(record.timestamp, &(*iterator_to_inserted.first).second);
-		  karma_to_iterator.emplace(record.karma, &(*iterator_to_inserted.first).second);
-		  name_to_iterator.emplace(record.user, &(*iterator_to_inserted.first).second);
+		  auto iterator_to_inserted = id_to_record.insert({record.id, {record, timestamp_to_iterator.end(),
+				  karma_to_iterator.end(), name_to_iterator.end()}});
+		  id_to_record[record.id].to_timestamp =
+				  timestamp_to_iterator.emplace(record.timestamp, &(iterator_to_inserted.first->second.record));
+		  id_to_record[record.id].to_karma =
+				  karma_to_iterator.emplace(record.karma, &(iterator_to_inserted.first->second.record));
+		  id_to_record[record.id].to_users =
+				  name_to_iterator.emplace(record.user, &(iterator_to_inserted.first->second.record));
 		  return true;
 	  }
 	  return false;
@@ -36,16 +41,14 @@ public:
 	  if(id_to_record.count(id) == 0){
 		  return nullptr;
 	  }
-	  return &((*id_to_record.find(id)).second);
+	  return &((*id_to_record.find(id)).second.record);
   }
   bool Erase(const string& id){
 	  if(id_to_record.count(id) != 0){
-		  auto Equal_range = timestamp_to_iterator.equal_range(id_to_record[id].timestamp);
-		  timestamp_to_iterator.erase(Find_In_Equal_Range(Equal_range.first, Equal_range.second, id));
-		  Equal_range = karma_to_iterator.equal_range(id_to_record[id].karma);
-		  karma_to_iterator.erase(Find_In_Equal_Range(Equal_range.first, Equal_range.second, id));
-		  auto Equal_range_Users = name_to_iterator.equal_range(id_to_record[id].user);
-		  name_to_iterator.erase(Find_In_Equal_Range(Equal_range_Users.first, Equal_range_Users.second, id));
+		  Tied_record &got_record = id_to_record[id];
+		  timestamp_to_iterator.erase(got_record.to_timestamp);
+		  karma_to_iterator.erase(got_record.to_karma);
+		  name_to_iterator.erase(got_record.to_users);
 		  id_to_record.erase(id);
 		  return true;
 	  }
@@ -55,19 +58,18 @@ public:
   template <typename Callback>
   void RangeByTimestamp(int low, int high, Callback callback) const{
 	  auto iterator_low = timestamp_to_iterator.lower_bound(low);
-	  for(auto it = iterator_low; it != timestamp_to_iterator.end(); it++){
-		  if(!callback(*(it->second)) && it->first > high){
+	  for(auto it = iterator_low; it != timestamp_to_iterator.end() && it->first <= high; it++ ){
+		  if(callback(*it->second) == false){
 			  break;
 		  }
 	  }
-
   }
 
   template <typename Callback>
   void RangeByKarma(int low, int high, Callback callback) const{
 	  auto iterator_low = karma_to_iterator.lower_bound(low);
-	  for(auto it = iterator_low; it != karma_to_iterator.end(); it++){
-		  if(!callback(*(it->second)) && it->first > high){
+	  for(auto it = iterator_low; it != karma_to_iterator.end() && it->first <= high; it++ ){
+		  if(callback(*it->second) == false){
 			  break;
 		  }
 	  }
@@ -76,31 +78,23 @@ public:
   template <typename Callback>
   void AllByUser(const string& user, Callback callback) const{
 	  auto iterator_to_equal = name_to_iterator.equal_range(user);
-	  for(auto it = iterator_to_equal.first; it != iterator_to_equal.second;it++){
-		  if(user == it->first){
-			  if(!callback(*(it->second))){
-				  break;
-			  }
-		  }
-		  else{
+	  for(auto it = iterator_to_equal.first; it != iterator_to_equal.second; it++ ){
+		  if(callback(*it->second) == false){
 			  break;
 		  }
 	  }
-
   }
 private:
-  unordered_map<string, Record> id_to_record;
+  struct Tied_record{
+  		Record record;
+  		multimap<int, Record*>::iterator to_timestamp;
+  		multimap<int, Record*>::iterator to_karma;
+  		multimap<string, Record*>::iterator to_users;
+  	};
+  unordered_map<string, Tied_record> id_to_record;
   multimap<int, Record*> timestamp_to_iterator;
   multimap<int, Record*> karma_to_iterator;
   multimap<string, Record*> name_to_iterator;
-
-  template <typename Iterator>
-  Iterator Find_In_Equal_Range(Iterator begin, Iterator end, const string& id){
-	  return find_if(begin, end, [id](auto& pair_of_multimap){
-		  return (*pair_of_multimap.second).id == id;
-	  });
-  }
-
 };
 
 void TestRangeBoundaries() {
