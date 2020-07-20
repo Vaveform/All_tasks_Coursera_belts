@@ -42,13 +42,13 @@ string MostExpensiveCategory(
 }
 
 vector<Spending> LoadFromXml(istream& input) {
+	vector<Spending> spendings;
 	Document xml_doc = Load(input);
 	for(const auto& element: xml_doc.GetRoot().Children()){
-		const string namer = "spend";
-		cout << namer << endl;
-		element.AttributeValue(namer);
+//		Spending to_insert = {element.AttributeValue<string>("category"), element.AttributeValue<int>("amount")};
+		spendings.push_back({element.AttributeValue<string>("category"), element.AttributeValue<int>("amount")});
 	}
-	return {};
+	return spendings;
 }
 
 void TestLoadFromXml() {
