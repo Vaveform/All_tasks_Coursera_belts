@@ -18,8 +18,6 @@ struct Record {
 };
 
 
-
-// Р РµР°Р»РёР·СѓР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ
 class Database {
 public:
 
@@ -87,14 +85,14 @@ public:
 private:
   struct Tied_record{
   		Record record;
-  		multimap<int, Record*>::iterator to_timestamp;
-  		multimap<int, Record*>::iterator to_karma;
-  		multimap<string, Record*>::iterator to_users;
+  		multimap<int,const Record*>::iterator to_timestamp;
+  		multimap<int,const Record*>::iterator to_karma;
+  		multimap<string, const Record*>::iterator to_users;
   	};
   unordered_map<string, Tied_record> id_to_record;
-  multimap<int, Record*> timestamp_to_iterator;
-  multimap<int, Record*> karma_to_iterator;
-  multimap<string, Record*> name_to_iterator;
+  multimap<int,const Record*> timestamp_to_iterator;
+  multimap<int,const Record*> karma_to_iterator;
+  multimap<string,const Record*> name_to_iterator;
 };
 
 void TestRangeBoundaries() {
