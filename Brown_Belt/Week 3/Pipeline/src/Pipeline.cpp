@@ -40,6 +40,11 @@ public:
 	  captured = move(next);
   }
   // Типа next, как у обычного односвязанного списка
+  // Можно сделать приватным - тогда нужно в Pipeline сделать вектор
+  // из unique_ptr, при вызови очередного метода (SetSender, SetCopier)
+  // заполняется эта структура.
+  // Когда вызывается Build - переберается структура(вектор) от конца до начала
+  // И устанавливает Set_Next;
   unique_ptr<Worker> captured = unique_ptr<Worker>(nullptr);
 };
 
@@ -59,7 +64,8 @@ public:
 		  email->from = move(from);
 		  email->to = move(to);
 		  email->body = move(body);
-		  if(!(!input_ && (email->from.empty() || email->to.empty() || email->body.empty()))){
+		  if(input_ && (!email->from.empty() ||
+				  !email->to.empty() || !email->body.empty()))){
 			  PassOn(move(email));
 		  }
 	  }
@@ -196,35 +202,11 @@ void TestSanity() {
     "richard@example.com\n"
     "Are you sure you pressed the right button?\n"
   );
-  //cout << outStream.str() << endl;
   ASSERT_EQUAL(expectedOutput, outStream.str());
 }
 
 int main() {
-//  TestRunner tr;
-//  RUN_TEST(tr, TestSanity);
-  string input = (
-      "erich@example.com\n"
-      "richard@example.com\n"
-      "Hello there\n"
-
-      "erich@example.com\n"
-      "ralph@example.com\n"
-      "Are you sure you pressed the right button?\n"
-
-      "ralph@example.com\n"
-      "erich@example.com\n"
-      "I do not make mistakes of that kind\n"
-
-	  "exf@example.com\n"
-    );
-	istringstream inStream(input);
-	ostringstream outStream;
-
-	PipelineBuilder builder(inStream);
-	builder.Send(outStream);
-	auto b = builder.Build();
-	b->Run();
-	cout << outStream.str() << endl;
+  TestRunner tr;
+  RUN_TEST(tr, TestSanity);
   return 0;
 }
