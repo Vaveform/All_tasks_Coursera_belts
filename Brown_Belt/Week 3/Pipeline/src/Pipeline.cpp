@@ -65,7 +65,7 @@ public:
 		  email->to = move(to);
 		  email->body = move(body);
 		  if(input_ && (!email->from.empty() ||
-				  !email->to.empty() || !email->body.empty()))){
+				  !email->to.empty() || !email->body.empty())){
 			  PassOn(move(email));
 		  }
 	  }
