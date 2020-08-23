@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <utility>
 
 using namespace std;
 
@@ -32,13 +33,35 @@ void PrintCoeff(std::ostream& out, int i, const T& coef, bool printed) {
 template<typename T>
 class Polynomial {
 private:
-  mutable std::vector<T> coeffs_ = {0};
+  std::vector<T> coeffs_ = {0};
 
   void Shrink() {
     while (coeffs_.size() > 1 && coeffs_.back() == 0) {
       coeffs_.pop_back();
     }
   }
+
+  class IndexProxy{
+  public:
+	  IndexProxy(Polynomial<T>& p, size_t degree) : poly(p), degree_(degree){};
+	  operator T() const {
+		  // Вызывается константный оператор T operator[] const класса Poly
+		  return std::as_const(poly)[degree_];
+	  }
+	  IndexProxy& operator=(const T& value){
+		  // Удивительно, но имею доступ только к полям (приватным) класса Polynomial (и это не зависит от того где определение класса :
+		  // в приватной секции Polynomial или публичной
+		  if(degree_ > poly.coeffs_.size() - 1){
+			  poly.coeffs_.resize(degree_ + 1);
+		  }
+		  poly.coeffs_[degree_] = value;
+		  poly.Shrink();
+		  return *this;
+	  }
+  private:
+	  Polynomial<T>& poly;
+	  size_t degree_;
+  };
 
 public:
   Polynomial() = default;
@@ -60,7 +83,6 @@ public:
   }
 
   int Degree() const {
-	Shrink();
     return coeffs_.size() - 1;
   }
 
@@ -90,13 +112,9 @@ public:
     return degree < coeffs_.size() ? coeffs_[degree] : 0;
   }
 
-
   // Реализуйте неконстантную версию operator[]
-  T& operator [](size_t degree){
-	  if(degree > coeffs_.size()){
-		  coeffs_.resize(degree);
-	  }
-	  return coeffs_[degree];
+  IndexProxy operator [](size_t degree){
+	  return {*this, degree};
   }
 
   T operator ()(const T& x) const {
@@ -270,6 +288,7 @@ void TestNonconstAccess() {
     }
   }
 }
+
 
 int main() {
   TestRunner tr;
