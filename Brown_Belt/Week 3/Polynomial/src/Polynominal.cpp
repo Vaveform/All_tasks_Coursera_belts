@@ -49,7 +49,7 @@ private:
 		  return std::as_const(poly)[degree_];
 	  }
 	  IndexProxy& operator=(const T& value){
-		  // Удивительно, но имею доступ только к полям (приватным) класса Polynomial (и это не зависит от того где определение класса :
+		  // Удивительно, но имею доступ только к полям/методам (приватным) класса Polynomial (и это не зависит от того где определение класса :
 		  // в приватной секции Polynomial или публичной
 		  if(degree_ > poly.coeffs_.size() - 1){
 			  poly.coeffs_.resize(degree_ + 1);
