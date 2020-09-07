@@ -3,4 +3,5 @@
 eclipse-cpp-2019-09-R-win32-x86_64
 *.zip
 *.txt
+core
 # I work in Eclipse and I do not want to remove from index .metadata, .cproject, .project
