@@ -195,5 +195,25 @@ int main() {
   RUN_TEST(tr, TestSmallTexture);
   RUN_TEST(tr, TestCow);
   RUN_TEST(tr, TestCpp);
+  Canvas canvas;
+	canvas.SetSize({107, 37});
+
+	// Буква "C" как разность двух эллипсов, один из которых нарисован цветом фона
+	canvas.AddShape(ShapeType::Ellipse, {45, 17}, {30, 15},
+					MakeTextureCheckers({100, 100}, 'o', 'U'));
+	canvas.AddShape(ShapeType::Ellipse, {8, 4}, {30, 9},
+					MakeTextureSolid({100, 100}, ' '));
+
+	// Горизонтальные чёрточки плюсов
+	auto h1 = canvas.AddShape(ShapeType::Rectangle, {54, 7}, {22, 3},
+							  MakeTextureSolid({100, 100}, '-'));
+	auto h2 = canvas.DuplicateShape(h1, {30, 7});
+
+	// Вертикальные чёрточки плюсов
+	auto v1 = canvas.DuplicateShape(h1, {62, 3});
+	canvas.ResizeShape(v1, {6, 11});
+	auto v2 = canvas.DuplicateShape(v1, {38, 3});
+
+	canvas.Print(cout);
   return 0;
 }
